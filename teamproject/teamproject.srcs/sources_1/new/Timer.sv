@@ -1,0 +1,1 @@
+//timer used to measure out a period of 2 seconds, system will run at 100mhz, so 200 000 000 clock cycles

@@ -1,25 +1,8 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/02/2017 04:54:46 PM
-// Design Name: 
-// Module Name: Deserializer
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
+//reads input from microphone, stores it into memory
+//needs to read a line of 0/1 and creates a 16 bit word
+//outputs done signal every 16 clock cycles
+//needs to convert a 100mhz clock signal to 1mhz signal internally
 module Deserializer(
 
     );
