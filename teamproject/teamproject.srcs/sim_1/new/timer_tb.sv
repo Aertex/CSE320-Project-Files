@@ -19,10 +19,10 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module timer_tb();
-input enable;
-input reset;
-input clock = 1'b0;
-output oneMHzclk;
+logic enable;
+logic reset;
+logic clock = 1'b0;
+logic oneMHzclk;
 
 timer time1(
 .enable(enable),
@@ -31,7 +31,7 @@ timer time1(
 .oneMHzclk(oneMHzclk)
 );
 
-always #10 clock = ~clock;
+always #5 clock = ~clock;
 
 initial 
 begin
@@ -44,9 +44,9 @@ reset = 0;
 reset = 1;
 #15 
 reset = 0;
+enable = 1;
 
-
+#100000000000000000000000
 #100 $finish;
 end
-
 endmodule
