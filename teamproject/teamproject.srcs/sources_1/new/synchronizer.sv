@@ -33,12 +33,20 @@ input logic clipselectionr,
 output logic [4:0]q
 );
 
+logic [4:0] b;
+
 always_ff@(posedge clock)
 begin
 if(reset)
-    q  <= 5'b0;
+    b  <= 5'b0;
 else 
-    q <= {reset,record,play,clipselectionwr,clipselectionr};
+    b <= {reset,record,play,clipselectionwr,clipselectionr};
 end
+
+always_ff@(posedge clock)
+begin
+q<=b;
+end
+
 
 endmodule

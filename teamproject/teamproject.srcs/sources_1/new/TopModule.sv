@@ -14,9 +14,9 @@ output logic a1,
 output logic [6:0]cathode
 
     );
-endmodule
 
-//----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
+
+
 blk_mem_gen_0 your_instance_name (
   .clka(clka),    // input wire clka
   .ena(ena),      // input wire ena
@@ -28,3 +28,5 @@ blk_mem_gen_0 your_instance_name (
   .addrb(addrb),  // input wire [15 : 0] addrb
   .doutb(doutb)  // output wire [15 : 0] doutb
 );
+
+endmodule
