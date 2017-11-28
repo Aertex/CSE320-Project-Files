@@ -1,1 +1,27 @@
 //timer used to measure out a period of 2 seconds, system will run at 100mhz, so 200 000 000 clock cycles
+module timer(
+input logic enable,
+input logic reset,
+input logic clock,
+output logic oneMHzclk
+);
+
+logic [27:0]counter;
+
+always@(posedge clock)
+begin 
+if((counter == 28'd199_999_999)||(enable == 1'b0))
+    counter <= 28'd000_000_000;
+else
+    begin
+           counter <= counter + 1'b1;
+    end
+end
+
+always@(posedge clock)
+    if(counter == 28'd199_999_999)
+        begin
+            oneMHzclk <= ~ oneMHzclk;
+        end
+        
+endmodule
