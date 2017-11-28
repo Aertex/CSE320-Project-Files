@@ -3,7 +3,7 @@ module timer(
 input logic enable,
 input logic reset,
 input logic clock,
-output logic oneMHzclk
+output logic done_signal //output of timer when 2 seconds have passed, passed to controller to cut off enable
 );
 
 logic [27:0]counter;
