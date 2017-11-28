@@ -1,26 +1,17 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/02/2017 04:55:45 PM
-// Design Name: 
-// Module Name: TopModule
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-//instantiate all modules here/act as main hub
+//just holds container, 
 module TopModule(
+input logic switch0,
+input logic switch1,
+input logic reset,
+input logic play,
+input logic record,
+input logic microphone,
+output logic audio_out,
+output logic a0,
+output logic a1,
+output logic [6:0]cathode
 
     );
 endmodule
