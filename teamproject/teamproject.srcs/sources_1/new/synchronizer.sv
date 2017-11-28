@@ -21,20 +21,24 @@
 
 
 module synchronizer(
+input clock,
 //buttons
-input clock
 input logic reset,
-input logic record, j
+input logic record,
 input logic play,
 //switches
 input logic clipselectionwr,
-input logic clipselectionr
+input logic clipselectionr,
+//output logic
+output logic [4:0]q
+);
 
-always _ff(posedge clock)
+always_ff@(posedge clock)
 begin
-
+if(reset)
+    q  <= 5'b0;
+else 
+    q <= {reset,record,play,clipselectionwr,clipselectionr};
 end
 
-
-    );
 endmodule
