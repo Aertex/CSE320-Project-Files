@@ -1,4 +1,6 @@
 //timer used to measure out a period of 2 seconds, system will run at 100mhz, so 200 000 000 clock cycles
+
+//done + verified
 module timer(
 input logic enable,
 
@@ -22,9 +24,10 @@ else
 end
 
 always@(posedge clock)
+begin
     if(counter == 28'd199_999_999)
         begin
             done_signal <= ~ done_signal;
         end
-        
+end
 endmodule
