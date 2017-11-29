@@ -22,25 +22,24 @@
 
 module scaledclock(
 input logic clock,
-output scaledclk 
+output logic scaledclk 
 );
-logic counter;
+logic [6:0]counter;
 always@(posedge clock)
 begin 
-if((counter == 1'd99)||(enable == 1'b0))
-    counter <= 28'd000_000_000;
+if((counter == 7'd99))
+    counter <= 7'd0;
 
 else
     begin
            counter <= counter + 1'b1;
-           done_signal = 0;
     end
 end
 
 always@(posedge clock)
-    if(counter == 28'd199_999_999)
+    if(counter == 7'd99)
         begin
-            done_signal <= ~ done_signal;
+            scaledclk <= ~scaledclk;
         end
 
     
