@@ -22,13 +22,19 @@
 
 module scaledclock(
 input logic clock,
+input logic enable,
+output logic [6:0]counter,
 output logic scaledclk 
 );
-logic [6:0]counter;
+
+logic [6:0]counter = 7'd0;
+
 always@(posedge clock)
 begin 
-if((counter == 7'd99))
+if((counter == 7'd49))
     counter <= 7'd0;
+if(enable == 0)
+    scaledclk = 0;
 
 else
     begin
@@ -37,9 +43,11 @@ else
 end
 
 always@(posedge clock)
-    if(counter == 7'd99)
+    if(counter == 7'd49)
         begin
+        //toggle clock and reset counter
             scaledclk <= ~scaledclk;
+            counter <= 7'b0;
         end
 
     

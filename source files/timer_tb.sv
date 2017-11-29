@@ -21,22 +21,27 @@
 module timer_tb();
 logic clock = 1'b0;
 logic scaledclk; 
-logic ssdf;
+logic enable;
+logic [6:0]counter;
 
 scaledclock clk(
 .clock(clock),
-.scaledclk(scaledclk)
+.counter(counter),
+.scaledclk(scaledclk),
+.enable(enable)
 );
 
 always #5 clock = ~clock;
 
 initial 
 begin
+enable = 0;
 
+#15
+enable = 1;
 
-
-#1000000000000
-ssdf = 1;
+#1000000000
+enable = 0;
 #100 $finish;
 end
 endmodule
