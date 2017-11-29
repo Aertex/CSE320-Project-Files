@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/teamproject/teamproject.xpr">
+<Project Version="7" Minor="20" Path="D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5f86e1724f6e4426ada18119972713cb"/>
@@ -108,6 +108,14 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../source files/Address_Creator.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../source files/scaledclock.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
