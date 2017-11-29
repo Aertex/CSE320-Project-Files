@@ -8,8 +8,8 @@ input clock,
 
 input logic seconds2, //input from timer to let controller know 2 seconds have passed
 
-output logic [1:0]memoryselect_clip_1, //2rd bit = write enable, 1nd bit = enable for memory reading/writing
-output logic [1:0]memoryselect_clip_2, //2rd bit = write enable, 1nd bit = enable for memory reading/writing
+output logic [1:0]memoryselect_clip_1, //2rd bit = which block, 1nd bit = read or write, write = 1, read = 0
+
 output logic timer
 );
 parameter s0 = 5'b00001; //idle state
@@ -54,31 +54,30 @@ s0:
 begin
 timer = 0;
 memoryselect_clip_1[1:0] = 2'b00;
-memoryselect_clip_2[1:0] = 2'b00;
+
 end
 s1:
 begin
 timer = 1;
-memoryselect_clip_1[1:0] = 2'b11;
-memoryselect_clip_2[1:0] = 2'b00;
+memoryselect_clip_1[1:0] = 2'b01;
+
 end
 s2:
 begin
 timer = 1;
-memoryselect_clip_1[1:0] = 2'b00;
-memoryselect_clip_2[1:0] = 2'b11;
+memoryselect_clip_1[1:0] = 2'b11;
+
 end
 s3: 
 begin
 timer = 1;
-memoryselect_clip_1[1:0] = 2'b01;
-memoryselect_clip_2[1:0] = 2'b00;
+memoryselect_clip_1[1:0] = 2'b00;
+
 end
 s4: 
 begin
 timer = 1;
-memoryselect_clip_1[1:0] = 2'b01;
-memoryselect_clip_2[1:0] = 2'b00;
+memoryselect_clip_1[1:0] = 2'b10;
 end
 endcase
 end
