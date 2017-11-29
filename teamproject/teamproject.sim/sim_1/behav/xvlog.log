@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/CSE320-Project-Files/source files/scaledclock.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scaledclock
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+WARNING: [VRFC 10-2495] decimal constant 1000000000000 is too large, using -727379968 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

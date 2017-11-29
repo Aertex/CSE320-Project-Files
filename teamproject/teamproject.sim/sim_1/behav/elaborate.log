@@ -1,0 +1,14 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 5f86e1724f6e4426ada18119972713cb --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.scaledclock
+Compiling module xil_defaultlib.timer_tb
+WARNING: [XSIM 43-3368] "D:/XLINIX Projects/GP/CSE320-Project-Files/source files/timer_tb.sv" Line 38. Negative delay (-727379968000.000000) treated as 0.
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
