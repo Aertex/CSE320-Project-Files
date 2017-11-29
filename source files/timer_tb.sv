@@ -19,28 +19,24 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module timer_tb();
-logic enable;
-
 logic clock = 1'b0;
-logic done_signal;
+logic scaledclk; 
+logic ssdf;
 
-timer time1(
-.enable(enable),
+scaledclock clk(
 .clock(clock),
-.done_signal(done_signal)
+.scaledclk(scaledclk)
 );
 
 always #5 clock = ~clock;
 
 initial 
 begin
-enable = 0;
 
 
-#10
-enable = 1;
 
-#100000000000000000000000
+#1000000000000
+ssdf = 1;
 #100 $finish;
 end
 endmodule
