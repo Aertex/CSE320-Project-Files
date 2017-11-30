@@ -27,8 +27,7 @@ logic done;
 logic [15:0] data;
 logic pdm_clk_o; //microphone clock, needs to be 1 mhz, just feed it thru lol
 logic pdm_irsel_o; //channel select
-logic [3:0]countero;
-logic [15:0]tempdatao;
+
 
 Deserializer ser(
 .clock(clock),
@@ -37,22 +36,20 @@ Deserializer ser(
 .done(done),
 .data(data),
 .pdm_clk_o(pdm_clk_o), //microphone clock, needs to be 1 mhz, just feed it thru lol
-.pdm_irsel_o(pdm_irsel_o),
+.pdm_irsel_o(pdm_irsel_o)
 
-.countero(countero),
-.tempdatao(tempdatao)
+
 );
 
-always #5 clock = ~clock;
+
+always #10 clock = ~clock;
 
 
 initial 
 begin
-enable = 0;
+enable = 1;
 data_in = 1;
 clock = 0;
-#15
-enable = 1;
 
 
 

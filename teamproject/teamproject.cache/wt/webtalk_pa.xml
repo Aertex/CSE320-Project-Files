@@ -3,13 +3,9 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<<<<<<< HEAD
-<application name="pa" timeStamp="Wed Nov 29 19:57:29 2017">
-=======
-<application name="pa" timeStamp="Wed Nov 29 19:56:34 2017">
->>>>>>> 86986d77cdb01330a6625508b7459913bfb6ed92
+<application name="pa" timeStamp="Wed Nov 29 20:30:52 2017">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="a9ec03b0f09847d3a933d0d277736953" type="ProjectID"/>
+<property name="ProjectID" value="a54561c9e975422ab075ab6e67f0e13c" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
@@ -21,64 +17,27 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="CoreView" value="1" type="JavaHandler"/>
-<property name="CustomizeCore" value="1" type="JavaHandler"/>
-<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="3" type="JavaHandler"/>
 <property name="SimulationClose" value="1" type="JavaHandler"/>
-<property name="SimulationRun" value="7" type="JavaHandler"/>
+<property name="SimulationRun" value="4" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<<<<<<< HEAD
 <property name="BaseDialog_OK" value="1" type="GuiResourceData"/>
-<property name="ConfirmSaveTextEditsDialog_NO" value="1" type="GuiResourceData"/>
-<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="3" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="29" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="1" type="GuiResourceData"/>
-=======
-<property name="BaseDialog_OK" value="2" type="GuiResourceData"/>
-<property name="CmdMsgDialog_OK" value="2" type="GuiResourceData"/>
-<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="3" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="23" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="15" type="GuiResourceData"/>
->>>>>>> 86986d77cdb01330a6625508b7459913bfb6ed92
-<property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_FIT" value="6" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_IN" value="10" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_OUT" value="2" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="9" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="10" type="GuiResourceData"/>
+<property name="GraphicalView_ZOOM_FIT" value="4" type="GuiResourceData"/>
+<property name="GraphicalView_ZOOM_IN" value="2" type="GuiResourceData"/>
 <property name="MainMenuMgr_FILE" value="4" type="GuiResourceData"/>
-<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="4" type="GuiResourceData"/>
-<property name="MsgView_CRITICAL_WARNINGS" value="1" type="GuiResourceData"/>
-<property name="MsgView_INFORMATION_MESSAGES" value="1" type="GuiResourceData"/>
-<property name="OpenFileAction_OPEN_DIRECTORY" value="1" type="GuiResourceData"/>
-<<<<<<< HEAD
-<property name="PAViews_CODE" value="2" type="GuiResourceData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="1" type="GuiResourceData"/>
-=======
 <property name="PACommandNames_SIMULATION_CLOSE" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="7" type="GuiResourceData"/>
->>>>>>> 86986d77cdb01330a6625508b7459913bfb6ed92
-<property name="PartChooser_PARTS" value="1" type="GuiResourceData"/>
-<property name="ProgressDialog_CANCEL" value="1" type="GuiResourceData"/>
-<property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiResourceData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="43" type="GuiResourceData"/>
-<property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="2" type="GuiResourceData"/>
-<property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="1" type="GuiResourceData"/>
-<property name="SrcChooserTable_SRC_CHOOSER_TABLE" value="4" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="4" type="GuiResourceData"/>
+<property name="ProgressDialog_BACKGROUND" value="1" type="GuiResourceData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="16" type="GuiResourceData"/>
 <property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
-<property name="SyntheticaStateMonitor_CANCEL" value="1" type="GuiResourceData"/>
-<property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="1" type="GuiResourceData"/>
-<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="2" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<<<<<<< HEAD
-<property name="GuiMode" value="21" type="GuiMode"/>
+<property name="GuiMode" value="9" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="18" type="TclMode"/>
-=======
-<property name="GuiMode" value="8" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="7" type="TclMode"/>
->>>>>>> 86986d77cdb01330a6625508b7459913bfb6ed92
+<property name="TclMode" value="8" type="TclMode"/>
 </item>
 </section>
 </application>
