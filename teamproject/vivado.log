@@ -2,11 +2,28 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Nov 29 18:48:33 2017
-# Process ID: 6956
+# Start of session at: Wed Nov 29 19:10:40 2017
+# Process ID: 15768
 # Current directory: D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9684 D:\XLINIX Projects\GP\CSE320-Project-Files\teamproject\teamproject.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10384 D:\XLINIX Projects\GP\CSE320-Project-Files\teamproject\teamproject.xpr
 # Log file: D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/vivado.log
 # Journal file: D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project {D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'd:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'd:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'd:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'd:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'd:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+remove_files  -fileset sim_1 {{D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.srcs/sim_1/new/topmod_tb.sv}}
+file delete -force {D:/XLINIX Projects/GP/CSE320-Project-Files/teamproject/teamproject.srcs/sim_1/new/topmod_tb.sv}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{D:/XLINIX Projects/GP/CSE320-Project-Files/source files/topmod_tb.sv}}
+update_compile_order -fileset sim_1
