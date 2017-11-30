@@ -45,7 +45,7 @@ Deserializer ser(
 
 always #5 clock = ~clock;
 
-always #3 data_in = ~data_in; //wanted a prime for more variability in random data input
+always #5 data_in = ~data_in; //wanted a prime for more variability in random data input
 
 
 initial 
