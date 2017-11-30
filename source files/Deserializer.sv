@@ -12,17 +12,21 @@ output logic [15:0] data,
 output logic pdm_clk_o, //microphone clock, needs to be 1 mhz, just feed it thru lol
 output logic pdm_irsel_o, //channel select
 
-output logic [3:0]countero,
+output logic [4:0]countero,
 output logic [15:0]tempdatao
     );
     
-    logic [3:0]counter = 4'b0;
+    logic [4:0]counter = 4'b0;
     
     logic [15:0]tempdata = 16'b0;
     
+    always@(posedge clock) pdm_clk_o = clock; //pass through of clock
     
+    
+   
      always@(posedge clock)
      begin
+     pdm_irsel_o = 1'b0; //forced channel 0
      
      if(enable)
         begin
@@ -32,10 +36,13 @@ output logic [15:0]tempdatao
      
          tempdatao = tempdata;
      
-         if(counter == 4'd15)
+         if(counter == 5'd16)
          begin
          data = tempdata;
          done = 1'b1;
+         
+         counter <=5'd0;
+         
          end
          else done = 1'b0;
         end
@@ -47,19 +54,14 @@ output logic [15:0]tempdatao
     
     always@(posedge clock)
     begin
-    if(~enable) counter<=4'd0;
     
-    if (counter == 4'd15)
-    begin
-    counter <= 4'd0;
-
-    end
-    else 
-    begin
-    counter <= counter +1;
+    if(~enable) counter<=5'd0;
+    
+    else counter <= counter +1;
     
     countero=counter;
+
     end
-    end
+
 
 endmodule
