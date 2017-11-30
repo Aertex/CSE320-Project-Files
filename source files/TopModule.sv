@@ -18,9 +18,44 @@ output logic a1,
 output logic [6:0]cathode
 
 );
-//addresses from address creator to memory
-logic addressM1[15:0];
-logic addressM2[15:0];
+
+synchronizer synchronizer(
+.clock(clock),
+.reset(reset),
+.record(record),
+.play(play),
+.clipselectionwr(clipselectionwr),
+.clipselectionr(clipselectionr),
+.q(q)
+);
+
+Controller controller(
+.q(q), //{reset,record,play,clipselectionwrite,clipselectionread}
+.clock(clock),
+.seconds2(seconds2), //input from timer to let controller know 2 seconds have passed
+.memoryselect_clip_1(memoryselect_clip_1), //2nd bit = which block, 1st bit = read or write, write = 1, read = 0
+.timer(timer)
+);
+
+Segment_LED_Interface LEDS(
+.switch0(switch0), //slect record clip, 1 or 2 J15 package pins
+.switch1(switch1), //select play clip, 1 or 2  L16
+.a0(a0),
+.a1(a1),
+.cathode(cathode) //7 - 0  = a-g
+);
+
+timer time2(
+.enable(enable),
+.clock(clock),
+.done_signal(done_signal) //output of timer when 2 seconds have passed, passed to controller to cut off enable
+);
+
+scaledclock sclk(
+.clock(clock),
+.enable(enable),
+.scaledclk(scaledclk) 
+);
 
 Deserializer Dserial(
 .clock(clock),
