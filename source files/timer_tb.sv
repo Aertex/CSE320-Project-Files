@@ -46,6 +46,7 @@ initial
 begin
 enable = 1;
 data_in = 16'b1000_0000_0000_0001;
+
 clock = 0;
 
 

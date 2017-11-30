@@ -3,10 +3,14 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
+<<<<<<< HEAD
 <Project Version="7" Minor="20" Path="D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr">
+=======
+<Project Version="7" Minor="20" Path="C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.xpr">
+>>>>>>> 59b838f146fc5087ccb4342e428d08b4c3f42fec
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="9c27982f52fc4f64b72c57ee1a62012a"/>
+    <Option Name="Id" Val="2227f0c3916c4b80a2b202b3da5539e4"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -29,7 +33,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="5"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -135,15 +139,19 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+<<<<<<< HEAD
       <Filter Type="Srcs"/>
       <File Path="$PPRDIR/../source files/controller_tb.sv">
+=======
+      <File Path="$PPRDIR/../source files/timer_tb.sv">
+>>>>>>> 59b838f146fc5087ccb4342e428d08b4c3f42fec
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../source files/timer_tb.sv">
+      <File Path="$PPRDIR/../source files/controller_tb.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -161,9 +169,8 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="controller_tb"/>
+        <Option Name="TopModule" Val="timer_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SrcSet" Val="sources_1"/>
