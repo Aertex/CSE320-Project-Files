@@ -19,24 +19,44 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module timer_tb();
-logic clock = 1'b0;
-logic scaledclk; 
-logic enable;
 
-scaledclock clk(
+logic clock;
+logic enable;
+logic data_in;
+logic done;
+logic [15:0] data;
+logic pdm_clk_o; //microphone clock, needs to be 1 mhz, just feed it thru lol
+logic pdm_irsel_o; //channel select
+logic [3:0]countero;
+logic [15:0]tempdatao;
+
+Deserializer ser(
 .clock(clock),
-.scaledclk(scaledclk),
-.enable(enable)
+.enable(enable),
+.data_in(data_in),
+.done(done),
+.data(data),
+.pdm_clk_o(pdm_clk_o), //microphone clock, needs to be 1 mhz, just feed it thru lol
+.pdm_irsel_o(pdm_irsel_o),
+
+.countero(countero),
+.tempdatao(tempdatao)
 );
 
 always #5 clock = ~clock;
 
+always #3 data_in = ~data_in; //wanted a prime for more variability in random data input
+
+
 initial 
 begin
 enable = 0;
-
+data_in = 0;
+clock = 0;
 #15
 enable = 1;
+
+
 
 #1000000000
 enable = 0;
