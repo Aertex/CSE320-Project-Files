@@ -8,7 +8,7 @@ input clock,
 
 input logic seconds2, //input from timer to let controller know 2 seconds have passed
 
-output logic [1:0]memoryselect_clip_1, //2nd bit = which block, 1st bit = read or write, write = 1, read = 0
+output logic [1:0]memoryselect_clip_1, //2nd bit = which block, 0 = block 1, 1 = block 2, 1st bit = read or write, write = 1, read = 0
 
 output logic timer
 );
