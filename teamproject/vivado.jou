@@ -2,16 +2,49 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+<<<<<<< HEAD
+# Start of session at: Wed Nov 29 20:39:22 2017
+# Process ID: 260
+# Current directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15620 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
+# Log file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/vivado.log
+# Journal file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject\vivado.jou
+=======
 # Start of session at: Wed Nov 29 20:38:29 2017
 # Process ID: 11112
 # Current directory: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10556 C:\Users\Jesse\Desktop\CSE320-Project-Files\teamproject\teamproject.xpr
 # Log file: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/vivado.log
 # Journal file: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject\vivado.jou
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.xpr
 update_compile_order -fileset sources_1
+<<<<<<< HEAD
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/controller_tb.sv}}
+update_compile_order -fileset sim_1
+set_property top controller_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+close_sim
+launch_simulation
+source controller_tb.tcl
+=======
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 launch_simulation
@@ -41,4 +74,5 @@ source timer_tb.tcl
 close_sim
 launch_simulation
 source timer_tb.tcl
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 close_sim
