@@ -19,6 +19,8 @@ output logic [6:0]cathode
 
 );
 
+logic [4:0]qout;
+
 synchronizer synchronizer(
 .clock(clock),
 .reset(reset),
@@ -26,13 +28,13 @@ synchronizer synchronizer(
 .play(play),
 .clipselectionwr(switch0),
 .clipselectionr(switch1),
-.q(q)
+.q(qout)
 );
 
 Controller controller(
-.q(q), //{reset,record,play,clipselectionwrite,clipselectionread}
+.q(qout), //{reset,record,play,clipselectionwrite,clipselectionread}
 .clock(clock),
-.seconds2(seconds2), //input from timer to let controller know 2 seconds have passed
+.seconds2(timerdone), //input from timer to let controller know 2 seconds have passed
 .memoryselect_clip_1(memoryselect_clip_1), //2nd bit = which block, 1st bit = read or write, write = 1, read = 0
 .timer(timer)
 );
@@ -56,7 +58,7 @@ Segment_LED_Interface LEDS(
 timer time2(
 .enable(enable),
 .clock(clock),
-.done_signal(done_signal) //output of timer when 2 seconds have passed, passed to controller to cut off enable
+.done_signal(timerdone) //output of timer when 2 seconds have passed, passed to controller to cut off enable
 );
 
 scaledclock sclk(
