@@ -1,2 +1,4 @@
 2 second timer works,
 1 MHz clock works,
+deserializer works, 
+controller works,
