@@ -27,8 +27,10 @@ output logic [6:0]cathode //7 - 0  = a-g
     a1 = 1'b1;
     cathode[6:0] = 7'b001_001_0; //2
     end
+    end
     
-    
+    always@(negedge clock)
+    begin
     if(switch1 == 1'b0) //read led is set to write to block 1
     begin
     a0 = 1'b1;
