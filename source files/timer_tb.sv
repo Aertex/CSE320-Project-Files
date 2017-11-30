@@ -22,33 +22,31 @@ module timer_tb();
 
 logic clock;
 logic enable;
-logic data_in;
+logic [15:0]data_in;
 logic done;
-logic [15:0] data;
-logic pdm_clk_o; //microphone clock, needs to be 1 mhz, just feed it thru lol
-logic pdm_irsel_o; //channel select
+logic audio_data;
+
+logic [3:0]countero;
 
 
-Deserializer ser(
+Serializer ser(
 .clock(clock),
 .enable(enable),
 .data_in(data_in),
 .done(done),
-.data(data),
-.pdm_clk_o(pdm_clk_o), //microphone clock, needs to be 1 mhz, just feed it thru lol
-.pdm_irsel_o(pdm_irsel_o)
-
-
+.audio_data(audio_data),
+.audio_enable(audio_enable), 
+.countero(conuntero)
 );
 
 
 always #10 clock = ~clock;
-always #7 data_in = ~data_in;
+
 
 initial 
 begin
 enable = 1;
-data_in = 1;
+data_in = 16'b1010_0101_1010_1111;
 clock = 0;
 
 

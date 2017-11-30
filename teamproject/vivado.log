@@ -2,22 +2,31 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+<<<<<<< HEAD
 # Start of session at: Wed Nov 29 20:39:22 2017
 # Process ID: 260
 # Current directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15620 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
 # Log file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/vivado.log
 # Journal file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject\vivado.jou
+=======
+# Start of session at: Wed Nov 29 20:38:29 2017
+# Process ID: 11112
+# Current directory: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10556 C:\Users\Jesse\Desktop\CSE320-Project-Files\teamproject\teamproject.xpr
+# Log file: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/vivado.log
+# Journal file: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject\vivado.jou
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 #-----------------------------------------------------------
 start_gui
-open_project {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject' since last save.
+open_project C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
 update_compile_order -fileset sources_1
+<<<<<<< HEAD
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
 add_files -fileset sim_1 -norecurse {{D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/controller_tb.sv}}
 update_compile_order -fileset sim_1
@@ -31,10 +40,15 @@ WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-f
 ERROR: [Common 17-180] Spawn failed: No error
 ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
 update_compile_order -fileset sim_1
+=======
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 launch_simulation
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
+<<<<<<< HEAD
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
 INFO: [SIM-utils-54] Inspecting design source files for 'controller_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -53,10 +67,78 @@ INFO: [USF-XSim-99] Step results log file:'D:/XLINIX Projects/GP/better group pr
 ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xvlog.log' file for more information.
 ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+=======
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 20:47:53 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 20:47:53 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 889.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 925.496 ; gain = 36.090
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 launch_simulation
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
+<<<<<<< HEAD
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
 INFO: [SIM-utils-54] Inspecting design source files for 'controller_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -85,10 +167,149 @@ INFO: [USF-XSim-99] Step results log file:'D:/XLINIX Projects/GP/better group pr
 ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/elaborate.log' file for more information.
 ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+=======
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 20:51:21 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 20:51:21 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 945.625 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
 launch_simulation
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 20:52:37 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 20:52:37 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 945.625 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+<<<<<<< HEAD
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
 INFO: [SIM-utils-54] Inspecting design source files for 'controller_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -119,12 +340,47 @@ Compiling module xil_defaultlib.Controller
 Compiling module xil_defaultlib.controller_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot controller_tb_behav
+=======
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 
 ****** Webtalk v2017.2 (64-bit)
   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
+<<<<<<< HEAD
 source D:/XLINIX -notrace
 invalid command name "%"
     while executing
@@ -141,6 +397,21 @@ INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2017.2
 Time resolution is 1 ps
 source controller_tb.tcl
+=======
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 20:54:05 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 20:54:05 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -151,16 +422,26 @@ source controller_tb.tcl
 #   }
 # }
 # run 5000ns
+<<<<<<< HEAD
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'controller_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 5000ns
 launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 997.469 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 997.469 ; gain = 0.000
+=======
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 945.625 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 945.625 ; gain = 0.000
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 launch_simulation
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
+<<<<<<< HEAD
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
 INFO: [SIM-utils-54] Inspecting design source files for 'controller_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -191,12 +472,47 @@ Compiling module xil_defaultlib.Controller
 Compiling module xil_defaultlib.controller_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot controller_tb_behav
+=======
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 
 ****** Webtalk v2017.2 (64-bit)
   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
+<<<<<<< HEAD
 source D:/XLINIX -notrace
 invalid command name "%"
     while executing
@@ -213,6 +529,21 @@ INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2017.2
 Time resolution is 1 ps
 source controller_tb.tcl
+=======
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 20:56:46 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 20:56:46 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -223,16 +554,26 @@ source controller_tb.tcl
 #   }
 # }
 # run 5000ns
+<<<<<<< HEAD
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'controller_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 5000ns
 launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 997.469 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 997.469 ; gain = 0.000
+=======
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 945.625 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 launch_simulation
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
+<<<<<<< HEAD
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
 INFO: [SIM-utils-54] Inspecting design source files for 'controller_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -263,12 +604,83 @@ Compiling module xil_defaultlib.Controller
 Compiling module xil_defaultlib.controller_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot controller_tb_behav
+=======
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+ERROR: [VRFC 10-1658] variable tempdata is driven by invalid combination of procedural drivers [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv:20]
+WARNING: [VRFC 10-2066] tempdata driven by this always_comb block should not be driven by any other process [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv:24]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 
 ****** Webtalk v2017.2 (64-bit)
   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
+<<<<<<< HEAD
 source D:/XLINIX -notrace
 invalid command name "%"
     while executing
@@ -285,6 +697,21 @@ INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2017.2
 Time resolution is 1 ps
 source controller_tb.tcl
+=======
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 21:06:31 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 21:06:31 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 945.625 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -295,16 +722,26 @@ source controller_tb.tcl
 #   }
 # }
 # run 5000ns
+<<<<<<< HEAD
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'controller_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 5000ns
 launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 997.469 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 997.469 ; gain = 0.000
+=======
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 945.625 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 951.676 ; gain = 0.000
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 launch_simulation
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
+<<<<<<< HEAD
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
 INFO: [SIM-utils-54] Inspecting design source files for 'controller_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -335,12 +772,47 @@ Compiling module xil_defaultlib.Controller
 Compiling module xil_defaultlib.controller_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot controller_tb_behav
+=======
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 
 ****** Webtalk v2017.2 (64-bit)
   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
+<<<<<<< HEAD
 source D:/XLINIX -notrace
 invalid command name "%"
     while executing
@@ -357,6 +829,21 @@ INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2017.2
 Time resolution is 1 ps
 source controller_tb.tcl
+=======
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 21:09:38 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 21:09:38 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 951.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -367,16 +854,26 @@ source controller_tb.tcl
 #   }
 # }
 # run 5000ns
+<<<<<<< HEAD
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'controller_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 5000ns
 launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:26 . Memory (MB): peak = 997.469 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 1004.574 ; gain = 0.000
+=======
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 951.676 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 951.676 ; gain = 0.000
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 launch_simulation
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
+<<<<<<< HEAD
 INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
 INFO: [SIM-utils-54] Inspecting design source files for 'controller_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -407,12 +904,47 @@ Compiling module xil_defaultlib.Controller
 Compiling module xil_defaultlib.controller_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot controller_tb_behav
+=======
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
 
 ****** Webtalk v2017.2 (64-bit)
   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
+<<<<<<< HEAD
 source D:/XLINIX -notrace
 invalid command name "%"
     while executing
@@ -429,6 +961,20 @@ INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2017.2
 Time resolution is 1 ps
 source controller_tb.tcl
+=======
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 21:11:21 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 21:11:21 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 951.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -439,6 +985,79 @@ source controller_tb.tcl
 #   }
 # }
 # run 5000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 951.676 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 951.676 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'timer_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj timer_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_tb
+INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:37]
+INFO: [VRFC 10-2458] undeclared symbol conuntero, assumed default net type wire [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 901262b12a7e4195a5b8959b5abb070b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port countero [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/timer_tb.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.timer_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot timer_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xsim.dir/timer_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov 29 21:15:33 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 21:15:33 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 951.676 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "timer_tb_behav -key {Behavioral:sim_1:Functional:timer_tb} -tclbatch {timer_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source timer_tb.tcl
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 5000ns
+<<<<<<< HEAD
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'controller_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 5000ns
 launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 1004.574 ; gain = 0.000
@@ -447,3 +1066,13 @@ INFO: [Simtcl 6-16] Simulation closed
 close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 1004.574 ; gain = 0.000
 exit
 INFO: [Common 17-206] Exiting Vivado at Wed Nov 29 21:19:07 2017...
+=======
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'timer_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 5000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 951.676 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 951.676 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 29 21:18:28 2017...
+>>>>>>> d477788e3078d14acf5f34fdae3b14c01eb6d2b7
