@@ -45,13 +45,11 @@ Deserializer ser(
 
 always #5 clock = ~clock;
 
-always #5 data_in = ~data_in; //wanted a prime for more variability in random data input
-
 
 initial 
 begin
 enable = 0;
-data_in = 0;
+data_in = 1;
 clock = 0;
 #15
 enable = 1;
