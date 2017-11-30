@@ -37,6 +37,14 @@ Controller controller(
 .timer(timer)
 );
 
+MemInterpreter MemInterpreter(
+.memoryena(memoryena),
+.block1ena(block1ena),
+.block1wea(block1wea),
+.block2ena(block2ena),
+.block2wea(block2wea)
+);
+    
 Segment_LED_Interface LEDS(
 .switch0(switch0), //slect record clip, 1 or 2 J15 package pins
 .switch1(switch1), //select play clip, 1 or 2  L16

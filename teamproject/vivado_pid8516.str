@@ -1,0 +1,252 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 8516
+License: Customer
+
+Current time: 	11/30/17 11:26:08 AM MST
+Time zone: 	Mountain Standard Time (America/Phoenix)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 35 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/Windows/Sun/Java/bin;C:/Windows/system32;C:/Windows;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/Intel/WiFi/bin/;C:/Program Files/Common Files/Intel/WirelessCommon/;D:/Program Files/MATLAB/runtime/win64;D:/Program Files/MATLAB/bin;D:/Program Files/Git/cmd;C:/Users/Clifton Benally/AppData/Local/Microsoft/WindowsApps;C:/Users/Clifton Benally/AppData/Local/GitHubDesktop/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	Clifton Benally
+User home directory: C:/Users/Clifton Benally
+User working directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/Clifton Benally/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Clifton Benally/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/Clifton Benally/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/.Xil/Vivado-8516-DESKTOP-MSCBAO0
+
+GUI allocated memory:	175 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 550 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 54 MB (+53875kb) [00:00:05]
+// [Engine Memory]: 462 MB (+332675kb) [00:00:05]
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr. Version: Vivado v2017.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/teamproject' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+7999kb) [00:00:09]
+// [Engine Memory]: 580 MB (+99522kb) [00:00:09]
+// [GUI Memory]: 76 MB (+9191kb) [00:00:09]
+// [GUI Memory]: 89 MB (+9608kb) [00:00:10]
+// [GUI Memory]: 96 MB (+2401kb) [00:00:10]
+// [Engine Memory]: 620 MB (+12160kb) [00:00:10]
+// [GUI Memory]: 105 MB (+4801kb) [00:00:11]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 39 MB. Current time: 11/30/17 11:26:12 AM MST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 830.047 ; gain = 68.488 
+// Project name: teamproject; location: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject; part: xc7a100tcsg324-1
+// [Engine Memory]: 657 MB (+5607kb) [00:00:12]
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (MemInterpreter.sv) elapsed time: 0.2s
+// Elapsed time: 59 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MemInterpreter (MemInterpreter.sv)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopModule (TopModule.sv)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopModule (TopModule.sv)]", 1); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv)]", 6, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, timer_tb (timer_tb.sv)]", 5, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv)]", 6, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemInterpreter (MemInterpreter.sv)]", 7, false); // B:i (D:JPanel, cg:JFrame)
+// Elapsed time: 143 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv)]", 6); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv), TopMod : TopModule (TopModule.sv)]", 7); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv), TopMod : TopModule (TopModule.sv), serial : Serializer (Serializer.sv)]", 14, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv), TopMod : TopModule (TopModule.sv), serial : Serializer (Serializer.sv)]", 14, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("Serializer.sv", 328, 123); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("Serializer.sv", 293, 410); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 120, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 137, 394); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 676 MB. GUI used memory: 40 MB. Current time: 11/30/17 11:30:55 AM MST
+selectCodeEditor("Serializer.sv", 289, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 245, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 268, 343); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 267, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 267, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 71 seconds
+selectCodeEditor("Serializer.sv", 290, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 223, 366); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 297, 215); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("Serializer.sv", 177, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 177, 277, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("Serializer.sv", 177, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 177, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 194, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 53 seconds
+selectCodeEditor("Serializer.sv", 57, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 69, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 82, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 200, 426); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Serializer.sv", 77, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 242 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv)]", 6); // B:i (D:JPanel, cg:JFrame)
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemInterpreter (MemInterpreter.sv)]", 7, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemInterpreter (MemInterpreter.sv)]", 7, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("MemInterpreter.sv", 364, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 682 MB. GUI used memory: 41 MB. Current time: 11/30/17 12:00:56 PM MST
+// Elapsed time: 1996 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Serializer.sv", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MemInterpreter.sv", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("MemInterpreter.sv", 154, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MemInterpreter.sv", 97, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MemInterpreter.sv", 130, 341); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MemInterpreter.sv", 234, 371); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MemInterpreter.sv", 239, 424); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MemInterpreter.sv", 211, 322); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("MemInterpreter.sv", 255, 362); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 693 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, timer_tb (timer_tb.sv)]", 5); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv)]", 7); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv), TopMod : TopModule (TopModule.sv)]", 8, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv), TopMod : TopModule (TopModule.sv)]", 8, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Elapsed time: 17 seconds
+selectCodeEditor("TopModule.sv", 255, 316); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemInterpreter (MemInterpreter.sv)]", 9, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemInterpreter (MemInterpreter.sv)]", 9, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemInterpreter (MemInterpreter.sv)]", 9, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("MemInterpreter.sv", 67, 170); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "MemInterpreter.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "MemInterpreter.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv), TopMod : TopModule (TopModule.sv)]", 8, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, topmod_tb (topmod_tb.sv), TopMod : TopModule (TopModule.sv), serial : Serializer (Serializer.sv)]", 15, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("TopModule.sv", 41, 342); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 34, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 18, 258); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [Engine Memory]: 690 MB (+726kb) [00:59:58]
+// Elapsed time: 49 seconds
+selectCodeEditor("TopModule.sv", 43, 185); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 22, 170); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 34, 170); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 34, 170, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 81, 173); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 31, 199); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 31, 199, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 22, 206); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 22, 206, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 31, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 38, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 38, 230, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 39, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 25, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 25, 248, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("TopModule.sv", 25, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 25, 248, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "TopModule.sv", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 252, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("TopModule.sv", 54, 156); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 68 seconds
+selectCodeEditor("TopModule.sv", 256, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("TopModule.sv", 130, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 693 MB. GUI used memory: 41 MB. Current time: 11/30/17 12:30:57 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 39 MB. Current time: 11/30/17 12:34:22 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 40 MB. Current time: 11/30/17 1:04:22 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 703 MB. GUI used memory: 40 MB. Current time: 11/30/17 1:34:54 PM MST
