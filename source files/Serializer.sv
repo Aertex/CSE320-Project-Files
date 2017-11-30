@@ -8,6 +8,7 @@ module Serializer( //shifts new bits right to left
     input logic clock,
     input logic enable,
     input logic [15:0] data_in,
+    output logic [15:0] tempdata,
     output logic [3:0] counter,
     output logic done,
     output logic audio_enable, //needed to enable audio, D12
@@ -17,57 +18,42 @@ module Serializer( //shifts new bits right to left
 
     logic [3:0]counter = 4'b0; //counter for counting 16 cycles
     logic [15:0]tempdata;
+    logic boolean;
     
-    
- always_comb audio_enable = enable;
- 
-    
-    always@(posedge clock) 
+always_comb audio_enable = enable;
+always@(posedge clock)
+begin
+ if(enable)
     begin
-    if(counter==0) tempdata<=data_in; //reads new data at the start of every count cycle
+        boolean <= 1;
+        if(counter == 0)
+            tempdata = data_in;
+
     end
-    
-    
-     always@(posedge clock)
-       begin
-      
-       
-       if(enable)
-          begin
-          
-           audio_data = tempdata[15];
+ else
+    begin
+    boolean <= 0;
+    tempdata <= 16'd0;
+    audio_data <= 1'b0;
+    end
+    if(enable&&boolean)
+        begin
+           audio_data <= tempdata[15];
+           tempdata = tempdata << 1;
+           counter <= counter + 4'b1;
+           done <= 1'b0;
            
-           tempdata = tempdata<<1;
-       
-       
-       
            if(counter == 4'd15)
            begin
-
-           done = 1'b1;
-           
-           counter <=4'd0;
-           
+                counter <= 4'b0;
+                done <= 1'b1;
            end
-           else done = 1'b0;
-          end
-        else
-            counter <= 4'b0;
-       
-       end
-    
-    
-    always@(posedge clock)
-    begin
-    
-        if(~enable) 
-            counter<=4'd0;
-    
-        else
-        begin 
-            counter <= counter+ 4'b0001;
         end
-    
+    else
+        begin 
+            done <= 4'b0;
+            audio_data <= 4'b0;
+            counter <= 4'd0;
+        end
     end
-    
 endmodule

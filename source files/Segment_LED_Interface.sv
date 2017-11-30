@@ -10,39 +10,43 @@ output logic a0,//right led
 output logic a1,//left led
 output logic [6:0]cathode //7 - 0  = a-g
     );
+logic boolean;
     
-    always@(posedge clock)
+    always_comb
     begin
     
-    if(switch0 == 1'b0) //write led is set to write to block 1
+    if((switch0 == 1'b0)&&(boolean == 0)) //write led is set to write to block 1
     begin
     a0 = 1'b0;
     a1 = 1'b1;
-    cathode[6:0] = 7'b100_111_1; //1
+    cathode[6:0] = 7'b100_111_1; //
+    boolean = 1;
     end
 
-    else if(switch0 == 1'b1) //write led is set to write to block 2 
+    else if((switch0 == 1'b1)&&(boolean == 0)) //write led is set to write to block 2 
     begin
     a0 = 1'b0;
     a1 = 1'b1;
     cathode[6:0] = 7'b001_001_0; //2
-    end
+    boolean = 1;
     end
     
-    always@(negedge clock)
-    begin
-    if(switch1 == 1'b0) //read led is set to write to block 1
+
+    if((switch1 == 1'b0)&&(boolean == 1)) //read led is set to write to block 1
     begin
     a0 = 1'b1;
     a1 = 1'b0;
     cathode[6:0] = 7'b100_111_1; //1
+    boolean = 0;
     end
 
-    else if(switch1 == 1'b0) //read led is set to write to block 2
+    else if((switch1 == 1'b0)&&(boolean == 1)) //read led is set to write to block 2
     begin
     a0 = 1'b1;
     a1 = 1'b0;
     cathode[6:0] = 7'b001_001_0; //2
+    boolean = 0;
+
     end
-    end
+  end
 endmodule

@@ -12,3 +12,97 @@
 start_gui
 open_project {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr}
 update_compile_order -fileset sources_1
+launch_simulation
+source LED_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+set_property top timer_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+launch_simulation
+source timer_tb.tcl
+close_sim
+close_sim

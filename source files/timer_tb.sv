@@ -20,13 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 module timer_tb();
 
-logic clock;
+logic clock = 1'b0;
 logic enable;
 logic [15:0]data_in;
 logic done;
 logic audio_data;
 logic audio_enable;
 logic [3:0]counter;
+logic [15:0] tempdata;
 
 
 
@@ -35,6 +36,7 @@ Serializer ser(
 .enable(enable),
 .data_in(data_in),
 .done(done),
+.tempdata(tempdata),
 .audio_data(audio_data),
 .audio_enable(audio_enable),
 .counter(counter)
@@ -47,13 +49,15 @@ always #10 clock = ~clock;
 initial 
 begin
 enable = 0;
-data_in = 16'b1000_0000_0000_0000;
+data_in = 16'b1000_0000_0000_0001;
 
 #25 
 enable = 1;
-clock = 0;
 
+#25
+enable = 0;
 
+#25 enable = 1;
 
 #1000000000
 enable = 0;
