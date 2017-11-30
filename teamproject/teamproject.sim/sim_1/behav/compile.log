@@ -1,7 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/source files/Deserializer.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Deserializer
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/source files/timer_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module timer_tb
-INFO: [VRFC 10-2458] undeclared symbol audio_enable, assumed default net type wire [C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/source files/timer_tb.sv:38]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

@@ -1,7 +1,0 @@
-Vivado Simulator 2017.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 9c27982f52fc4f64b72c57ee1a62012a --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot timer_tb_behav xil_defaultlib.timer_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-426] cannot find port audio_enable on this module [C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/source files/timer_tb.sv:38]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
