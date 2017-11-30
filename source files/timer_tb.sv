@@ -25,7 +25,7 @@ logic enable;
 logic [15:0]data_in;
 logic done;
 logic audio_data;
-
+logic audio_enable;
 
 
 

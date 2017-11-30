@@ -37,9 +37,6 @@ module Serializer( //shifts new bits right to left
            audio_data = tempdata[15];
            
            tempdata = tempdata<<1;
-       
-       
-       
            if(counter == 4'd15)
            begin
 
@@ -56,17 +53,13 @@ module Serializer( //shifts new bits right to left
     
     always@(posedge clock)
     begin
-    
     if(~enable) counter<=4'd0;
-    
     else
     begin 
     
     counter <= counter +1;
+    end
     
-
-    
-end
     end
     
 endmodule
