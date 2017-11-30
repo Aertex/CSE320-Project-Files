@@ -8,7 +8,7 @@ module Serializer( //shifts new bits right to left
     input logic clock,
     input logic enable,
     input logic [15:0] data_in,
-
+    output logic [3:0] counter,
     output logic done,
     output logic audio_enable, //needed to enable audio, D12
     output logic audio_data
@@ -51,6 +51,8 @@ module Serializer( //shifts new bits right to left
            end
            else done = 1'b0;
           end
+        else
+            counter <= 4'b0;
        
        end
     
@@ -58,12 +60,13 @@ module Serializer( //shifts new bits right to left
     always@(posedge clock)
     begin
     
-    if(~enable) counter<=4'd0;
+        if(~enable) 
+            counter<=4'd0;
     
-    else
-    begin 
-    counter <= counter+ 4'b0001;
-    end
+        else
+        begin 
+            counter <= counter+ 4'b0001;
+        end
     
     end
     
