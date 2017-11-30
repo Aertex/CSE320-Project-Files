@@ -43,7 +43,7 @@ Deserializer ser(
 
 
 always #10 clock = ~clock;
-
+always #7 data_in = ~data_in;
 
 initial 
 begin

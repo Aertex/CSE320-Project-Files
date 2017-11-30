@@ -13,6 +13,7 @@ output logic pdm_clk_o, //microphone clock, needs to be 1 mhz, just feed it thru
 output logic pdm_irsel_o //channel select
 
     );
+    //done + verified
     
     logic [4:0]counter = 4'b0;
     
