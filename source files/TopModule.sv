@@ -24,8 +24,8 @@ synchronizer synchronizer(
 .reset(reset),
 .record(record),
 .play(play),
-.clipselectionwr(clipselectionwr),
-.clipselectionr(clipselectionr),
+.clipselectionwr(switch0),
+.clipselectionr(switch1),
 .q(q)
 );
 

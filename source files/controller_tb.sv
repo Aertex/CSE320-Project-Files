@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module controller_tb;
+module controller_tb();
 logic clock = 1'b0;
 logic [4:0]q; //{reset,record,play,clipselectionwrite,clipselectionread}
 logic [1:0]memoryselect_clip_1; //2nd bit = which block, 1st bit = read or write, write = 1, read = 0

@@ -3,8 +3,8 @@
 
 // should be done plz error check
 module Segment_LED_Interface(
-input logic switch0, //slect record clip, 1 or 2 J15 package pins
-input logic switch1, //select play clip, 1 or 2  L16
+input logic switch0, //which memory block, 1 or 2 J15 package pins
+input logic switch1, //play or record, 1 or 2  L16
 output logic a0,//right led
 output logic a1,//left led
 output logic [6:0]cathode //7 - 0  = a-g
@@ -33,7 +33,7 @@ output logic [6:0]cathode //7 - 0  = a-g
     a1 = 1'b0;
     cathode[6:0] = 7'b100_111_1; //1
     end
-    
+
     else if(switch1 == 1'b0)
     begin
     a0 = 1'b1;
