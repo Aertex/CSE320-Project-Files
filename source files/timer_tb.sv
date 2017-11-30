@@ -25,8 +25,8 @@ logic enable;
 logic [15:0]data_in;
 logic done;
 logic audio_data;
-logic audio_enable;
 
+//logic [3:0]countero;
 
 
 Serializer ser(
@@ -36,6 +36,7 @@ Serializer ser(
 .done(done),
 .audio_data(audio_data),
 .audio_enable(audio_enable)
+//.countero(conuntero)
 );
 
 
