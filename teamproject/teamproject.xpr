@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/Jesse/Desktop/cse320 team project git/CSE320-Project-Files/teamproject/teamproject.xpr">
+<Project Version="7" Minor="20" Path="D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8d5266aec7ee46d39e2965046a604a52"/>
@@ -29,7 +29,15 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
+<<<<<<< HEAD
     <Option Name="WTXSimLaunchSim" Val="2"/>
+=======
+<<<<<<< HEAD
+    <Option Name="WTXSimLaunchSim" Val="1"/>
+=======
+    <Option Name="WTXSimLaunchSim" Val="3"/>
+>>>>>>> e156ac0b90d68ae56552a9a8df029f81ee394389
+>>>>>>> e0c71d5ef58dbb65f42ceaaa038ecbeda331fc26
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
