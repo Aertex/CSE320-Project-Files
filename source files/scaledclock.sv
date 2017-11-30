@@ -23,7 +23,6 @@
 module scaledclock(
 input logic clock,
 input logic enable,
-output logic [6:0]counter,
 output logic scaledclk 
 );
 

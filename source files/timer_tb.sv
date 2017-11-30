@@ -22,11 +22,9 @@ module timer_tb();
 logic clock = 1'b0;
 logic scaledclk; 
 logic enable;
-logic [6:0]counter;
 
 scaledclock clk(
 .clock(clock),
-.counter(counter),
 .scaledclk(scaledclk),
 .enable(enable)
 );
