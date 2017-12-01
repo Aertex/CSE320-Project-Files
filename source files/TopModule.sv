@@ -43,12 +43,12 @@ logic channelselect;
 logic pdm_clk_o;
 logic deseriena;
 logic seriena;
-
+logic aen;
 //or for done signal to address
 always_comb
 begin
     done = doneser||donedes;
-    
+    aen = block1ena || block2ena;    
 end
 
 
@@ -113,7 +113,8 @@ Address_creator DS( //address creator feeds both address ins of both memories, n
 .clock(scaledclk), //scaled clock input to prevent multiple increases when increasing address
 .done(done), //input, address only increases if this is recieved
 .reset(reset),
-.address(memaddr) //output 15:0 address
+.address(memaddr), //output 15:0 address
+.enable(aen)
 );
 
 
