@@ -65,14 +65,6 @@ Controller controller(
 .memoryselect_clip_1(memoryselect_clip_1), //2nd bit = which block, 1st bit = read or write, write = 1, read = 0
 .timer(timer)
 );
-
-MemInterpreter MemInterpreter(
-.memoryena(memoryselect_clip_1),
-.block1ena(block1ena),
-.block1wea(block1wea),
-.block2ena(block2ena),
-.block2wea(block2wea)
-);
     
 Segment_LED_Interface LEDS(
 .switch0(switch0), //slect record clip, 1 or 2 J15 package pins
@@ -118,6 +110,33 @@ Address_creator DS(
 .done(done), //input
 .reset(reset),
 .address(memaddr) //output
+);
+
+
+MemInterpreter MemInterpreter(
+.memoryena(memoryselect_clip_1),
+.block1ena(block1ena),
+.block1wea(block1wea),
+.block2ena(block2ena),
+.block2wea(block2wea)
+);
+
+blk_mem_gen_0 MEM1(
+  .clka(clka),    // input wire clka
+  .ena(block1ena),      // input wire ena
+  .wea(block1wea),      // input wire [0 : 0] wea
+  .addra(memaddr),  // input wire [15 : 0] addra
+  .dina(data),    // input wire [15 : 0] dina
+  .douta(mem1out)  // output wire [15 : 0] douta
+);
+
+blk_mem_gen_0 MEME2(
+  .clka(clka),    // input wire clka
+  .ena(block2ena),      // input wire ena
+  .wea(block2wea),      // input wire [0 : 0] wea
+  .addra(memaddr),  // input wire [15 : 0] addra
+  .dina(data),    // input wire [15 : 0] dina
+  .douta(mem2out)  // output wire [15 : 0] douta
 );
 
 twoinputmux MUX(
