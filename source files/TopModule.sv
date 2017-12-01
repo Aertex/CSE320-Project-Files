@@ -109,7 +109,7 @@ Serializer serial( //verified working
 .audio_data(audio_out) //bit stream out 
 );    
 
-Address_creator DS( //address creator feeds both address ins of both memories, not verified working
+Address_creator DS( //address creator feeds both address ins of both memories, verified working
 .clock(scaledclk), //scaled clock input to prevent multiple increases when increasing address
 .done(done), //input, address only increases if this is recieved
 .reset(reset),

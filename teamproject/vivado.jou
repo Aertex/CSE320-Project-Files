@@ -2,31 +2,13 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Dec  1 11:08:11 2017
-# Process ID: 11804
+# Start of session at: Fri Dec  1 11:26:17 2017
+# Process ID: 8960
 # Current directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6304 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9960 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
 # Log file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/vivado.log
 # Journal file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr}
 update_compile_order -fileset sources_1
-set_property top addresstb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-set_property -name {xsim.simulate.runtime} -value {8s} -objects [get_filesets sim_1]
-update_compile_order -fileset sim_1
-launch_simulation
-launch_simulation
-source addresstb.tcl
-close_sim
-launch_simulation
-source addresstb.tcl
-add_bp {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv} 19
-close_sim
-launch_simulation
-source addresstb.tcl
-close_sim
-launch_simulation
-source addresstb.tcl
-close_sim
