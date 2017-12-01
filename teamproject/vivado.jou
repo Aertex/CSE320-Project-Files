@@ -2,16 +2,26 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+<<<<<<< HEAD
 # Start of session at: Thu Nov 30 17:08:08 2017
 # Process ID: 4480
 # Current directory: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6408 C:\Users\Jesse\Desktop\CSE320-Project-Files\teamproject\teamproject.xpr
 # Log file: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/vivado.log
 # Journal file: C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject\vivado.jou
+=======
+# Start of session at: Thu Nov 30 17:09:39 2017
+# Process ID: 4472
+# Current directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7580 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
+# Log file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/vivado.log
+# Journal file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject\vivado.jou
+>>>>>>> a7d23c26383d3827eae677ea9beb6b36b6d612cc
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.xpr
 update_compile_order -fileset sources_1
+<<<<<<< HEAD
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 launch_simulation
@@ -34,3 +44,5 @@ launch_simulation
 launch_simulation
 source LED_tb.tcl
 close_sim
+=======
+>>>>>>> a7d23c26383d3827eae677ea9beb6b36b6d612cc
