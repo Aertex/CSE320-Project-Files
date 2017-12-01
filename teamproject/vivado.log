@@ -17,3 +17,374 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
 update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'topmod_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj topmod_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_creator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Deserializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Deserializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemInterpreter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Segment_LED_Interface
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serializer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopModule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/scaledclock.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scaledclock
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twoinputmux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/topmod_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topmod_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0d4ac315e9d64b94aa27c77883a1b460 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot topmod_tb_behav xil_defaultlib.topmod_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv" Line 5. Module Controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv" Line 4. Module timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" Line 5. Module Address_creator doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.Segment_LED_Interface
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.scaledclock
+Compiling module xil_defaultlib.Deserializer
+Compiling module xil_defaultlib.Serializer
+Compiling module xil_defaultlib.Address_creator
+Compiling module xil_defaultlib.MemInterpreter
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.twoinputmux
+Compiling module xil_defaultlib.TopModule
+Compiling module xil_defaultlib.topmod_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot topmod_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 10:45:27 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 870.527 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "topmod_tb_behav -key {Behavioral:sim_1:Functional:topmod_tb} -tclbatch {topmod_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source topmod_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module topmod_tb.TopMod.MEM1.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module topmod_tb.TopMod.MEME2.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+$finish called at time : 555 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/topmod_tb.sv" Line 90
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'topmod_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 891.059 ; gain = 20.531
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv}}
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/LED_TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/topmod_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/LED_TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/topmod_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/LED_TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/topmod_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+set_property top meminttb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/topmod_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xelab.pb
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'meminttb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj meminttb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemInterpreter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module meminttb
+WARNING: [VRFC 10-986] literal value truncated to fit in 1 bits [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv:50]
+WARNING: [VRFC 10-986] literal value truncated to fit in 1 bits [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv:53]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0d4ac315e9d64b94aa27c77883a1b460 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot meminttb_behav xil_defaultlib.meminttb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MemInterpreter
+Compiling module xil_defaultlib.meminttb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot meminttb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 10:55:01 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "meminttb_behav -key {Behavioral:sim_1:Functional:meminttb} -tclbatch {meminttb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source meminttb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'meminttb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1006.980 ; gain = 7.758
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/topmod_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xelab.pb
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'meminttb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj meminttb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemInterpreter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module meminttb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0d4ac315e9d64b94aa27c77883a1b460 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot meminttb_behav xil_defaultlib.meminttb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MemInterpreter
+Compiling module xil_defaultlib.meminttb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot meminttb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 10:56:22 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.859 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "meminttb_behav -key {Behavioral:sim_1:Functional:meminttb} -tclbatch {meminttb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source meminttb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'meminttb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.859 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/topmod_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xelab.pb
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'meminttb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj meminttb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemInterpreter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module meminttb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0d4ac315e9d64b94aa27c77883a1b460 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot meminttb_behav xil_defaultlib.meminttb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MemInterpreter
+Compiling module xil_defaultlib.meminttb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot meminttb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 10:57:10 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "meminttb_behav -key {Behavioral:sim_1:Functional:meminttb} -tclbatch {meminttb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source meminttb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 400 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/memint_tb.sv" Line 56
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'meminttb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1011.465 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.551 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  1 11:01:26 2017...
