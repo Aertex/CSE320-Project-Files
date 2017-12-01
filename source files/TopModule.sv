@@ -41,6 +41,8 @@ logic block2ena;
 logic block2wea;
 logic channelselect;
 logic pdm_clk_o;
+logic dseriena;
+logic seriena;
 
 //or for done signal to address
 always_comb
@@ -89,7 +91,7 @@ scaledclock sclk( //converts 100 mhz clock to 1 mhz, feeds serializer, deseriali
 
 Deserializer Dserial( //verified working
 .clock(scaledclk), //scaled clock input
-.enable(timer), //only deserialize when timing
+.enable(dseriena), //only deserialize when timing
 .data_in(microphone), //mic in
 .done(donedes), //into or gate output done to prevent contention, feeds into address creator
 .data(data), //15:0 word that gets outputted
@@ -99,7 +101,7 @@ Deserializer Dserial( //verified working
 
 Serializer serial( //verified working
 .clock(scaledclk), //scaled clk input
-.enable(timer), //only serialise when timing
+.enable(seriena), //only serialise when timing
 .data_in(memin), //15:0 word in 
 .done(doneser), //into or gate output done to prevent contention, feeds into address creator
 .audio_enable(audio_enable), //pass thru of enable
@@ -120,6 +122,9 @@ MemInterpreter MemInterpreter( //interprets the 2 bit memory input into usable e
 .block1wea(block1wea),
 .block2ena(block2ena),
 .block2wea(block2wea)
+.dseriena(dseriena),
+.seriana(seriana)
+
 );
 
 blk_mem_gen_0 MEM1(
