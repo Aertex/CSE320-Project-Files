@@ -3,6 +3,7 @@
 
 module MemInterpreter(
 input logic [1:0] memoryena,
+
 output logic block1ena,
 output logic block1wea,
 

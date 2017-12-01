@@ -48,6 +48,7 @@ logic seriena;
 always_comb
 begin
     done = doneser||donedes;
+    
 end
 
 
@@ -116,7 +117,7 @@ Address_creator DS( //address creator feeds both address ins of both memories, n
 );
 
 
-MemInterpreter MemInterpreter( //interprets the 2 bit memory input into usable enables for the memory blocks, not verified working
+MemInterpreter MemInterpreter( //interprets the 2 bit memory input into usable enables for the memory blocks, verified working
 .memoryena(memoryselect_clip_1), //2 bit input to decode
 .block1ena(block1ena), //read/write enables decoded from instructions
 .block1wea(block1wea),
