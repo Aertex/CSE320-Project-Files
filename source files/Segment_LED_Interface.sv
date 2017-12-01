@@ -9,7 +9,6 @@ input logic clock,
 output logic a0,//right led
 output logic a1,//left led
 output logic [6:0]cathode //7 - 0  = a-g
-
     );
 
 
@@ -17,7 +16,7 @@ output logic [6:0]cathode //7 - 0  = a-g
 always_comb
 begin
     case(clock) //every on/off clock cycle
-    1'b0: 
+        1'b0: 
         begin
             if(switch0)
                 cathode[6:0] = 7'b001_001_0; //2 //if switch0 = 1, display 2
@@ -50,6 +49,7 @@ begin
     1'b1: 
         a1=0;
     endcase
+    
 end
 
 

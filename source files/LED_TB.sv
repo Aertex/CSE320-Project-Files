@@ -25,7 +25,6 @@ logic switch1;
 logic a0; 
 logic a1; 
 logic [6:0]cathode;
-logic counter;
 
 Segment_LED_Interface LEDS(
 .switch0(switch0), //slect record clip, 1 or 2 J15 package pins
@@ -45,6 +44,7 @@ initial
 begin
 switch0 = 0;
 switch1 = 0;
+
 
 #200
 switch0 = 1;
