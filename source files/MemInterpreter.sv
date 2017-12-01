@@ -48,8 +48,8 @@ output logic deseriena
     begin
     block1ena = 0;
     block1wea = 0;
-    seriena =0;
-    
+    seriena = 0;
+    deseriena = 1;
     block2ena = 1;
     block2wea = 1;
     end
