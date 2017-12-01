@@ -20,6 +20,7 @@ output logic [6:0]cathode
 );
 
 logic [4:0]qout;
+logic [1:0]memoryselect_clip_1;
 
 synchronizer synchronizer(
 .clock(clock),
@@ -40,7 +41,7 @@ Controller controller(
 );
 
 MemInterpreter MemInterpreter(
-.memoryena(memoryena),
+.memoryena(memoryselect_clip_1),
 .block1ena(block1ena),
 .block1wea(block1wea),
 .block2ena(block2ena),
@@ -56,21 +57,21 @@ Segment_LED_Interface LEDS(
 );
 
 timer time2(
-.enable(enable),
+.enable(timer),
 .clock(clock),
 .done_signal(timerdone) //output of timer when 2 seconds have passed, passed to controller to cut off enable
 );
 
 scaledclock sclk(
 .clock(clock),
-.enable(enable),
+.enable(timer),
 .scaledclk(scaledclk) 
 );
 
 Deserializer Dserial(
-.clock(clock),
-.enable(enable),
-.data_in(data_in),
+.clock(scaledclk),
+.enable(timer),
+.data_in(microphone),
 .done(done),
 .data(data),
 .pdm_clk_o(pdm_clk_o), 
@@ -79,23 +80,25 @@ Deserializer Dserial(
 
 Serializer serial(
 
-.clock(clock),
-.enable(enable),
-.data_in(data_in),
+.clock(scaledclk),
+.enable(timer),
+.data_in(MEMORY),
 .done(done),
-.audio_enable(audio_enable),
+.audio_enable(audio_out),
 .audio_data(audio_data)
 );    
 
-Address_creator M1(
+Address_creator DS(
 .clock(clock), //input
 .done(done), //input
+.reset(reset),
 .address(addressM1) //output
 );
 
-Address_creator M2(
+Address_creator S(
 .clock(clock), //input
 .done(done), //input
+.reset(reset),
 .address(addressM2) //output
 );
 

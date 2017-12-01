@@ -5,11 +5,14 @@
 module Address_creator(
 input logic clock,
 input logic done,
+input logic reset,
 output logic [15:0]address
 );
 
 always@(posedge clock)
 begin 
+if(reset)
+    address <= 16'd0;
 if(address == 16'd62499)
     address <= 16'b0;
 if(done) address <= address +1'b1;
