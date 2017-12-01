@@ -46,7 +46,7 @@ end
 always_ff@(posedge clock)
 begin
     if(reset)
-        q <= 5'b0;
+        q <= 5'b10000;
     else
         if(record || play)
             q <= b;

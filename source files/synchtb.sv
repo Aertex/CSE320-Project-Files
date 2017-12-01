@@ -26,7 +26,6 @@ logic play;
 logic switch0;
 logic switch1;
 logic [4:0] qout; //{reset,record,play,clipselectionwrite,clipselectionread}
-logic [4:0] b;
 
 synchronizer synchronizer( //not verified working but cmon its 2 buffer ff
 .clock(clock),
@@ -34,7 +33,6 @@ synchronizer synchronizer( //not verified working but cmon its 2 buffer ff
 .record(record), //button
 .play(play), //button
 .clipselectionwr(switch0), //switch0, rightmost switch
-.b(b),
 .clipselectionr(switch1), //switch1, second to rightmost switch
 .q(qout) //5 bit output, concatination of above inputs after 2 ff
 );
