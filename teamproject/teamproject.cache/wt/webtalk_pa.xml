@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Nov 30 16:37:41 2017">
+<application name="pa" timeStamp="Thu Nov 30 17:07:31 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="cddf4e7b46d14306a3a0528bc3b3931c" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -20,53 +20,58 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSources" value="3" type="JavaHandler"/>
 <property name="NewProject" value="2" type="JavaHandler"/>
 <property name="SimulationClose" value="1" type="JavaHandler"/>
-<property name="SimulationRun" value="44" type="JavaHandler"/>
-<property name="ToolsSettings" value="5" type="JavaHandler"/>
+<property name="SimulationRun" value="63" type="JavaHandler"/>
+<property name="ToolsSettings" value="8" type="JavaHandler"/>
 <property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="AbstractFileView_RELOAD" value="1" type="GuiResourceData"/>
 <property name="AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN" value="1" type="GuiResourceData"/>
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="2" type="GuiResourceData"/>
-<property name="BaseDialog_APPLY" value="4" type="GuiResourceData"/>
-<property name="BaseDialog_CANCEL" value="1" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="8" type="GuiResourceData"/>
-<property name="BaseWorkspace_MAXIMIZE" value="2" type="GuiResourceData"/>
-<property name="CmdMsgDialog_OK" value="3" type="GuiResourceData"/>
+<property name="BaseDialog_APPLY" value="5" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="3" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="10" type="GuiResourceData"/>
+<property name="BaseWorkspace_MAXIMIZE" value="3" type="GuiResourceData"/>
+<property name="CmdMsgDialog_OK" value="8" type="GuiResourceData"/>
 <property name="ConfirmSaveTextEditsDialog_NO" value="1" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="65" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="108" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="76" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="150" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="2" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_FIT" value="40" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_IN" value="41" type="GuiResourceData"/>
+<property name="GraphicalView_ZOOM_FIT" value="52" type="GuiResourceData"/>
+<property name="GraphicalView_ZOOM_IN" value="44" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_OUT" value="5" type="GuiResourceData"/>
 <property name="MainMenuMgr_FILE" value="2" type="GuiResourceData"/>
 <property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="5" type="GuiResourceData"/>
 <property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="2" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="46" type="GuiResourceData"/>
-<property name="PAViews_CODE" value="7" type="GuiResourceData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="2" type="GuiResourceData"/>
+<property name="MsgView_INFORMATION_MESSAGES" value="2" type="GuiResourceData"/>
+<property name="MsgView_WARNING_MESSAGES" value="3" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="67" type="GuiResourceData"/>
+<property name="PAViews_CODE" value="9" type="GuiResourceData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="1" type="GuiResourceData"/>
-<property name="ProgressDialog_BACKGROUND" value="23" type="GuiResourceData"/>
+<property name="ProgressDialog_BACKGROUND" value="29" type="GuiResourceData"/>
 <property name="ProgressDialog_CANCEL" value="1" type="GuiResourceData"/>
 <property name="ProjectNameChooser_CHOOSE_PROJECT_LOCATION" value="1" type="GuiResourceData"/>
 <property name="ProjectNameChooser_CREATE_PROJECT_SUBDIRECTORY" value="1" type="GuiResourceData"/>
 <property name="ProjectNameChooser_PROJECT_NAME" value="2" type="GuiResourceData"/>
-<property name="ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE" value="4" type="GuiResourceData"/>
-<property name="RDICommands_SAVE_FILE" value="60" type="GuiResourceData"/>
+<property name="ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE" value="5" type="GuiResourceData"/>
+<property name="RDICommands_SAVE_FILE" value="80" type="GuiResourceData"/>
 <property name="RDICommands_WAVEFORM_SAVE_CONFIGURATION" value="2" type="GuiResourceData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="146" type="GuiResourceData"/>
-<property name="SelectTopModuleDialog_SELECT_TOP_MODULE" value="8" type="GuiResourceData"/>
-<property name="SettingsDialog_PROJECT_TREE" value="3" type="GuiResourceData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="155" type="GuiResourceData"/>
+<property name="RTLOptionsPanel_SELECT_TOP_MODULE_OF_YOUR_DESIGN" value="1" type="GuiResourceData"/>
+<property name="SelectTopModuleDialog_SELECT_TOP_MODULE" value="10" type="GuiResourceData"/>
+<property name="SettingsDialog_PROJECT_TREE" value="4" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="4" type="GuiResourceData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
 <property name="TaskBanner_CLOSE" value="1" type="GuiResourceData"/>
-<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="6" type="GuiResourceData"/>
+<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="7" type="GuiResourceData"/>
 <property name="WaveformView_GOTO_LAST_TIME" value="3" type="GuiResourceData"/>
 <property name="WaveformView_GOTO_TIME_0" value="14" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="30" type="GuiMode"/>
+<property name="GuiMode" value="31" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="27" type="TclMode"/>
+<property name="TclMode" value="28" type="TclMode"/>
 </item>
 </section>
 </application>

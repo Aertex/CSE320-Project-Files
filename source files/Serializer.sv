@@ -8,8 +8,6 @@ module Serializer( //shifts new bits right to left
     input logic clock,
     input logic enable,
     input logic [15:0] data_in,
-    output logic [15:0] tempdata,
-    output logic [3:0] counter,
     output logic done,
     output logic audio_enable, //needed to enable audio, D12
     output logic audio_data

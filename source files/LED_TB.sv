@@ -26,7 +26,6 @@ logic a0;
 logic a1; 
 logic [6:0]cathode;
 
-
 Segment_LED_Interface LEDS(
 .switch0(switch0), //slect record clip, 1 or 2 J15 package pins
 .switch1(switch1), //select play clip, 1 or 2  L16
