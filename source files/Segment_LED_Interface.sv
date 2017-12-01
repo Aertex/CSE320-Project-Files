@@ -9,7 +9,6 @@ input logic clock,
 input logic reset,
 output logic a0,//right led
 output logic a1,//left led
-output logic [3:0]count,
 output logic [6:0]cathode //7 - 0  = a-g
     );
 logic [3:0]count;

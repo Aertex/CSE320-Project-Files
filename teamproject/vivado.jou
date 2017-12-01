@@ -14,3 +14,9 @@ open_project {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/te
 update_compile_order -fileset sources_1
 launch_simulation
 source LED_tb.tcl
+synth_design -rtl -name rtl_1
+refresh_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+close_sim

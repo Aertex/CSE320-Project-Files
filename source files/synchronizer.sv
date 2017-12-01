@@ -30,8 +30,7 @@ input logic play,
 input logic clipselectionwr,
 input logic clipselectionr,
 //output logic
-output logic [4:0]q,
-output logic [4:0]b
+output logic [4:0]q
 );
 
 logic [4:0] b;

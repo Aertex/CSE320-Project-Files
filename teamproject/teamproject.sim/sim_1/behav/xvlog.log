@@ -1,7 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Segment_LED_Interface
-WARNING: [VRFC 10-1315] redeclaration of ansi port count is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:15]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/LED_TB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LED_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

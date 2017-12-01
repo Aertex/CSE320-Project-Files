@@ -72,7 +72,8 @@ Segment_LED_Interface LEDS( //led interface, super fucked atm
 .switch0(switch0), //slect record clip, 1 or 2 J15 package pins
 .switch1(switch1), //select play clip, 1 or 2  L16
 .a0(a0), //rightmost led segment
-.a1(a1), //second to rightmost led segment
+.a1(a1), //second to rightmost led 
+.reset(reset),
 .cathode(cathode) //7 - 0  = a-g
 );
 
