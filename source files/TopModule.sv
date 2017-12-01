@@ -145,7 +145,7 @@ blk_mem_gen_0 MEME2(
   .douta(mem2out)  // output wire [15 : 0] douta
 );
 
-twoinputmux MUX( //not verified
+twoinputmux MUX( // verified working 
 .mem1(mem1out), //mem 1 read feed
 .mem2(mem2out), //mem 2 read feed
 .memselect(block2ena), //if ~ena, then read from mem 1, else read from mem 2
