@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.xpr">
+<Project Version="7" Minor="20" Path="D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0d4ac315e9d64b94aa27c77883a1b460"/>
@@ -108,6 +108,13 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../source files/synchronizer.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../source files/twoinputmux.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

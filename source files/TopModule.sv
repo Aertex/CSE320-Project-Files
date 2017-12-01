@@ -11,16 +11,42 @@ input logic clock,
 
 
 input logic microphone,
-output logic audio_out,
 
+output logic audio_out,
 output logic a0,
 output logic a1,
 output logic [6:0]cathode
 
 );
 
+//wires and such
 logic [4:0]qout;
 logic [1:0]memoryselect_clip_1;
+logic [15:0]memin;
+logic [15:0]data;
+logic scaledclk;
+logic timerdone;
+logic timer;
+logic donedes;
+logic doneser;
+logic done;
+logic audio_enable;
+logic memaddr;
+logic [15:0]mem1out;
+logic [15:0]mem2out;
+logic memselect;
+logic block1ena;
+logic block1wea;
+logic block2ena;
+logic block2wea;
+logic channelselect;
+logic pdm_clk_o;
+//or for done signal to address
+always_comb
+begin
+    done = doneser||donedes;
+end
+
 
 synchronizer synchronizer(
 .clock(clock),
@@ -72,34 +98,33 @@ Deserializer Dserial(
 .clock(scaledclk),
 .enable(timer),
 .data_in(microphone),
-.done(done),
+.done(donedes),
 .data(data),
 .pdm_clk_o(pdm_clk_o), 
-.pdm_irsel_o(pdm_irsel_o) 
+.pdm_irsel_o(channelselect) 
 );
 
 Serializer serial(
-
 .clock(scaledclk),
 .enable(timer),
-.data_in(MEMORY),
-.done(done),
-.audio_enable(audio_out),
-.audio_data(audio_data)
+.data_in(memin),
+.done(doneser),
+.audio_enable(audio_enable),
+.audio_data(audio_out)
 );    
 
 Address_creator DS(
 .clock(clock), //input
 .done(done), //input
 .reset(reset),
-.address(addressM1) //output
+.address(memaddr) //output
 );
 
-Address_creator S(
-.clock(clock), //input
-.done(done), //input
-.reset(reset),
-.address(addressM2) //output
+twoinputmux MUX(
+.mem1(mem1out),
+.mem2(mem2out),
+.memselect(memselect),
+.dataout(memin)
 );
 
 endmodule
