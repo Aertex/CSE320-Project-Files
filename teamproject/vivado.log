@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Dec  1 11:26:17 2017
-# Process ID: 8960
+# Start of session at: Fri Dec  1 11:45:33 2017
+# Process ID: 6352
 # Current directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9960 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2348 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
 # Log file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/vivado.log
 # Journal file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject\vivado.jou
 #-----------------------------------------------------------
@@ -17,3 +17,899 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
 update_compile_order -fileset sources_1
+remove_files  {{D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv}}
+update_compile_order -fileset sim_1
+set_property top synchtb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/controller_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/controller_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+WARNING: [VRFC 10-2495] decimal constant 10000000000 is too large, using 1410065408 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:94]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 11:59:27 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 906.746 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 906.746 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 906.746 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 906.746 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+WARNING: [VRFC 10-2495] decimal constant 10000000000 is too large, using 1410065408 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:100]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:01:09 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 931.758 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:02:39 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 650 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 101
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:05:03 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 650 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 101
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:06:02 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 650 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 101
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 5 for port b [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:37]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:06:58 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 650 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 103
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:08:41 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 650 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 103
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2458] undeclared symbol qout, assumed default net type wire [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port q [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv:39]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:10:16 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 650 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 104
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:10:59 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 931.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 650 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 104
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 931.758 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:13:07 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 933.348 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 2230 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 116
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 933.348 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:17:20 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 934.855 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 2230 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 116
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 934.855 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'synchtb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj synchtb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot synchtb_behav xil_defaultlib.synchtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.synchronizer
+Compiling module xil_defaultlib.synchtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot synchtb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 12:18:28 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 934.855 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "synchtb_behav -key {Behavioral:sim_1:Functional:synchtb} -tclbatch {synchtb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source synchtb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+$finish called at time : 2230 ns : File "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" Line 116
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'synchtb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 934.855 ; gain = 0.000

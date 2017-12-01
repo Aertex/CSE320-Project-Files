@@ -9,7 +9,6 @@ input logic play,
 input logic record,
 input logic clock,
 
-
 input logic microphone,
 
 output logic audio_out,
@@ -34,7 +33,6 @@ logic audio_enable;
 logic [15:0]memaddr;//address
 logic [15:0]mem1out;
 logic [15:0]mem2out;
-logic memselect; //is this still needed?
 logic block1ena;
 logic block1wea;
 logic block2ena;
@@ -52,7 +50,7 @@ begin
 end
 
 
-synchronizer synchronizer( //not verified working but cmon its 2 buffer ff
+synchronizer synchronizer( //should be verified just verify outputs are correct
 .clock(clock),
 .reset(reset), //button
 .record(record), //button

@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer
+WARNING: [VRFC 10-1315] redeclaration of ansi port b is not allowed [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:37]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchtb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

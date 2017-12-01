@@ -30,7 +30,8 @@ input logic play,
 input logic clipselectionwr,
 input logic clipselectionr,
 //output logic
-output logic [4:0]q
+output logic [4:0]q,
+output logic [4:0]b
 );
 
 logic [4:0] b;
@@ -45,7 +46,13 @@ end
 
 always_ff@(posedge clock)
 begin
-q<=b;
+    if(reset)
+        q <= 5'b0;
+    else
+        if(record || play)
+            q <= b;
+        else
+            q <= q;
 end
 
 
