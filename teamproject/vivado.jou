@@ -2,151 +2,15 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Dec  1 11:45:33 2017
-# Process ID: 6352
+# Start of session at: Fri Dec  1 15:36:36 2017
+# Process ID: 9516
 # Current directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2348 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10920 D:\XLINIX Projects\GP\better group project\CSE320-Project-Files\teamproject\teamproject.xpr
 # Log file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/vivado.log
 # Journal file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr}
 update_compile_order -fileset sources_1
-remove_files  {{D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv}}
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse {{D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchtb.sv}}
-update_compile_order -fileset sim_1
-set_property top synchtb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-close_sim
-launch_simulation
-source synchtb.tcl
-set_property top LED_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
 launch_simulation
 source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-current_sim simulation_12
-close_sim
-close_sim
-launch_simulation
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
-launch_simulation
-source LED_tb.tcl
-close_sim
