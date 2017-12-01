@@ -22,18 +22,20 @@ module addresstb();
 logic clock = 1'b0;
 logic done;
 logic reset;
+logic enable;
 logic [15:0]address;
 
-Address_creator address(
+Address_creator addre(
 .clock(clock),
 .done(done),
+.enable(enable),
 .reset(reset),
 .address(address)
 );
 
 
 always
-    #25 done = ~done;
+    #300 done = ~done;
 always 
     #5 clock = ~clock;
     
@@ -41,7 +43,15 @@ initial
 begin
 done = 0;
 reset = 1;
-#100 
+enable = 0;
+
+#50
+reset = 0;
+#500 enable = 1;
+#500 enable = 0;
+#10000000000
+done = 0; 
+#100
 $finish;
 end
 endmodule

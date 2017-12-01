@@ -19,3 +19,327 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
 update_compile_order -fileset sources_1
+set_property top addresstb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property -name {xsim.simulate.runtime} -value {8s} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/LED_TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/LED_TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'addresstb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj addresstb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_creator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addresstb
+ERROR: [VRFC 10-46] address is already declared [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:27]
+WARNING: [VRFC 10-2495] decimal constant 10000000000000 is too large, using 1316134912 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:48]
+ERROR: [VRFC 10-1040] module addresstb ignored due to previous errors [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:21]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'addresstb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj addresstb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_creator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addresstb
+WARNING: [VRFC 10-2495] decimal constant 10000000000 is too large, using 1410065408 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:48]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot addresstb_behav xil_defaultlib.addresstb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" Line 5. Module Address_creator doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Address_creator
+Compiling module xil_defaultlib.addresstb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot addresstb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 11:16:27 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 886.199 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "addresstb_behav -key {Behavioral:sim_1:Functional:addresstb} -tclbatch {addresstb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source addresstb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 886.199 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 886.199 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'addresstb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 886.199 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'addresstb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj addresstb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_creator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addresstb
+WARNING: [VRFC 10-2495] decimal constant 10000000000 is too large, using 1410065408 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:52]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot addresstb_behav xil_defaultlib.addresstb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" Line 5. Module Address_creator doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Address_creator
+Compiling module xil_defaultlib.addresstb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot addresstb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 11:20:10 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 952.289 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "addresstb_behav -key {Behavioral:sim_1:Functional:addresstb} -tclbatch {addresstb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source addresstb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 952.289 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 952.289 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'addresstb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 952.289 ; gain = 0.000
+add_bp {D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv} 19
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'addresstb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj addresstb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_creator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addresstb
+WARNING: [VRFC 10-2495] decimal constant 10000000000 is too large, using 1410065408 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:52]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot addresstb_behav xil_defaultlib.addresstb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" Line 5. Module Address_creator doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Address_creator
+Compiling module xil_defaultlib.addresstb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot addresstb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 11:21:40 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 952.289 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "addresstb_behav -key {Behavioral:sim_1:Functional:addresstb} -tclbatch {addresstb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source addresstb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 952.289 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 952.289 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'addresstb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 952.289 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'addresstb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+"xvlog -m64 --relax -L xil_defaultlib -prj addresstb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_creator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addresstb
+WARNING: [VRFC 10-2495] decimal constant 10000000000 is too large, using 1410065408 (i.e limiting to 32 bits) instead [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/address_tb.sv:52]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0097a83a03174a29994105b1c7e67aae --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot addresstb_behav xil_defaultlib.addresstb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv" Line 5. Module Address_creator doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Address_creator
+Compiling module xil_defaultlib.addresstb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot addresstb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/XLINIX -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:/XLINIX" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 11:22:32 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 952.289 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "addresstb_behav -key {Behavioral:sim_1:Functional:addresstb} -tclbatch {addresstb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source addresstb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 8s
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 952.289 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 952.289 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'addresstb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 8s
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 952.289 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 952.289 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  1 11:25:14 2017...
