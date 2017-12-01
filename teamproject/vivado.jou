@@ -54,3 +54,99 @@ source synchtb.tcl
 close_sim
 launch_simulation
 source synchtb.tcl
+set_property top LED_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+current_sim simulation_12
+close_sim
+close_sim
+launch_simulation
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
+launch_simulation
+source LED_tb.tcl
+close_sim
