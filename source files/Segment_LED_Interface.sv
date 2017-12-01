@@ -11,33 +11,27 @@ output logic a1,//left led
 output logic [6:0]cathode //7 - 0  = a-g
 
     );
-        
-    
-    
-    
-    always@(*)
+  
+
+always_latch
     begin
     
-    if(clock)
-    begin
-    if((switch0 == 1'b0)) //write led is set to write to block 1
+    if((switch0 == 1'b0) && clock) //write led is set to write to block 1
     begin
     a0 = 1'b0;
     a1 = 1'b1;
-    cathode[6:0] = 7'b100_111_1; //
+    cathode[6:0] = 7'b100_111_1; //1
     end
-
-    else if((switch0 == 1'b1)) //write led is set to write to block 2 
+    
+    else if((switch0 == 1'b1) && clock) //write led is set to write to block 2 
     begin
     a0 = 1'b0;
     a1 = 1'b1;
     cathode[6:0] = 7'b001_001_0; //2
     end
-    end
     
     else
-    begin
-    if((switch1 == 1'b0)) //read led is set to write to block 1
+    if((switch1 == 1'b0) &&~clock) //read led is set to write to block 1
     begin
     a0 = 1'b1;
     a1 = 1'b0;
@@ -45,13 +39,13 @@ output logic [6:0]cathode //7 - 0  = a-g
     end
 
     else 
-    if((switch1 == 1'b0)) //read led is set to write to block 2
+    if((switch1 == 1'b0) &&~clock) //read led is set to write to block 2
     begin
         a0 = 1'b1;
         a1 = 1'b0;
         cathode[6:0] = 7'b001_001_0; //2
     end
     
-    end
+   
   end
 endmodule
