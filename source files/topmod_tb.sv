@@ -48,13 +48,45 @@ TopModule TopMod(
 .cathode(cathode)
 );
 
-always #5 clock = ~clock;
+always
+begin 
+#5 clock = ~clock;
+end
 
+always
+begin
+# 1microphone = 0;
+#3 microphone = 1;
+#2 microphone = 0;
+#6 microphone = 1;
+#6 microphone = 0;
+end
 
 initial 
 begin
 switch0 = 0;
 switch1 = 0;
+reset = 0;
+play = 0;
+record = 0;
+
+#5
+reset =1;
+#25 
+reset = 0;
+
+#25
+record = 1;
+
+#100
+record = 0;
+
+#250
+play = 1;
+
+#50
+play  = 0;
+
 #100 $finish;
 end
 
