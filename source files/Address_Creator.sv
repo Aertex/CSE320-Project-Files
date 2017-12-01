@@ -15,7 +15,8 @@ if(reset)
     address <= 16'd0;
 if(address == 16'd62499)
     address <= 16'b0;
-if(done) address <= address +1'b1;
+if(done) 
+    address <= address +1'b1;
   
 end
 

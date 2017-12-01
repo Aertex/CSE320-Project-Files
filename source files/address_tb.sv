@@ -19,39 +19,28 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module addresstb();
-logic [1:0] memoryena;
-logic block1ena;
-logic block2ena;
-logic block1wea;
-logic block2wea;
-logic seriena;
-logic deseriena;
+logic clock = 1'b0;
+logic done;
+logic reset;
+logic [15:0]address;
 
-MemInterpreter memint(
-.memoryena(memoryena),
-.block1ena(block1ena),
-.block1wea(block1wea),
-.block2ena(block2ena),
-.block2wea(block2wea),
-.seriena(seriena),
-.deseriena(deseriena)
+Address_creator address(
+.clock(clock),
+.done(done),
+.reset(reset),
+.address(address)
 );
 
 
+always
+    #25 done = ~done;
+always 
+    #5 clock = ~clock;
+    
 initial 
 begin
-//reset
-memoryena = 2'b00;
-
-#100 
-memoryena = 2'b01;
-
-#100 
-memoryena = 2'b10;
-
-#100 
-memoryena = 2'b11;
-
+done = 0;
+reset = 1;
 #100 
 $finish;
 end
