@@ -3,13 +3,9 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<<<<<<< HEAD
-<application name="pa" timeStamp="Fri Dec  1 11:13:55 2017">
-=======
-<application name="pa" timeStamp="Fri Dec  1 11:25:07 2017">
->>>>>>> d1f63fe2be438fafd79d6ab703d93ebc5cdfbdf1
+<application name="pa" timeStamp="Fri Dec  1 11:31:35 2017">
 <section name="Project Information" visible="false">
-<property name="ProjectID" value="cf0e41f9af75486d8dab97a8293468f6" type="ProjectID"/>
+<property name="ProjectID" value="b0c476eaf74846548344b61794403b3c" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
@@ -21,62 +17,28 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
 <property name="CoreView" value="1" type="JavaHandler"/>
 <property name="CustomizeCore" value="1" type="JavaHandler"/>
-<property name="NewProject" value="1" type="JavaHandler"/>
-<property name="SimulationBreak" value="4" type="JavaHandler"/>
-<property name="SimulationRun" value="5" type="JavaHandler"/>
-<property name="ToolsSettings" value="1" type="JavaHandler"/>
-<property name="WaveformSaveConfiguration" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="BaseDialog_APPLY" value="1" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="2" type="GuiResourceData"/>
-<property name="CmdMsgDialog_OK" value="1" type="GuiResourceData"/>
-<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="2" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="45" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="15" type="GuiResourceData"/>
-<property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_FIT" value="9" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_IN" value="43" type="GuiResourceData"/>
-<property name="GraphicalView_ZOOM_OUT" value="2" type="GuiResourceData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_LIVE_BREAK" value="4" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="5" type="GuiResourceData"/>
-<property name="PAViews_CODE" value="5" type="GuiResourceData"/>
-<property name="PartChooser_PARTS" value="1" type="GuiResourceData"/>
-<<<<<<< HEAD
-<property name="ProgressDialog_BACKGROUND" value="1" type="GuiResourceData"/>
-=======
-<property name="ProgressDialog_BACKGROUND" value="4" type="GuiResourceData"/>
->>>>>>> d1f63fe2be438fafd79d6ab703d93ebc5cdfbdf1
-<property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiResourceData"/>
-<property name="ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE" value="1" type="GuiResourceData"/>
-<property name="ProjectSettingsSimulationPanel_TABBED_PANE" value="5" type="GuiResourceData"/>
-<property name="RDICommands_SAVE_FILE" value="12" type="GuiResourceData"/>
-<property name="RDICommands_WAVEFORM_SAVE_CONFIGURATION" value="1" type="GuiResourceData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="21" type="GuiResourceData"/>
-<property name="SelectTopModuleDialog_SELECT_TOP_MODULE" value="2" type="GuiResourceData"/>
-<property name="SettingsDialog_PROJECT_TREE" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="1" type="GuiResourceData"/>
+<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="6" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="20" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_AUTO_UPDATE_HIER" value="6" type="GuiResourceData"/>
+<property name="RDICommands_SAVE_FILE" value="1" type="GuiResourceData"/>
 <property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="1" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="1" type="GuiResourceData"/>
-<property name="SrcChooserTable_SRC_CHOOSER_TABLE" value="12" type="GuiResourceData"/>
-<<<<<<< HEAD
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="54" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="50" type="TclMode"/>
-=======
+<property name="SrcMenu_IP_HIERARCHY" value="4" type="GuiResourceData"/>
 <property name="SrcMenu_REFRESH_HIERARCHY" value="1" type="GuiResourceData"/>
-<property name="WaveformView_GOTO_TIME_0" value="18" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="39" type="GuiMode"/>
+<property name="GuiMode" value="40" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="36" type="TclMode"/>
->>>>>>> d1f63fe2be438fafd79d6ab703d93ebc5cdfbdf1
+<property name="TclMode" value="37" type="TclMode"/>
 </item>
 </section>
 </application>
