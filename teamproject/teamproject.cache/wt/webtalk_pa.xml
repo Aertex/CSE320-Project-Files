@@ -3,7 +3,15 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Fri Dec  1 11:03:25 2017">
+=======
+<<<<<<< HEAD
+<application name="pa" timeStamp="Fri Dec  1 11:02:02 2017">
+=======
+<application name="pa" timeStamp="Fri Dec  1 11:01:14 2017">
+>>>>>>> 97950fe12a5b5a2ac97e08c2b0de2f3be3629fd4
+>>>>>>> 950b939674ccc338a2f3c6376ca8933bbd91c938
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="ce7b3008f3384f249d9171a776cab3d0" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -17,7 +25,52 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
+<<<<<<< HEAD
 <property name="AddSources" value="3" type="JavaHandler"/>
+=======
+<<<<<<< HEAD
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="RecustomizeCore" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="3" type="JavaHandler"/>
+<property name="SimulationRun" value="7" type="JavaHandler"/>
+<property name="ToolsSettings" value="3" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="AbstractFileView_RELOAD" value="1" type="GuiResourceData"/>
+<property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_APPLY" value="2" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="8" type="GuiResourceData"/>
+<property name="ConfirmSaveTextEditsDialog_NO" value="1" type="GuiResourceData"/>
+<property name="CreateSrcFileDialog_FILE_NAME" value="1" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="57" type="GuiResourceData"/>
+<property name="FileSetPanel_MESSAGES" value="1" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="18" type="GuiResourceData"/>
+<property name="GraphicalView_ZOOM_FIT" value="6" type="GuiResourceData"/>
+<property name="HACGCTabbedPane_TABBED_PANE" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_ADD_SOURCES" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="8" type="GuiResourceData"/>
+<property name="PAViews_CODE" value="16" type="GuiResourceData"/>
+<property name="ProgressDialog_BACKGROUND" value="2" type="GuiResourceData"/>
+<property name="ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE" value="3" type="GuiResourceData"/>
+<property name="RDICommands_SAVE_FILE" value="6" type="GuiResourceData"/>
+<property name="RDICommands_WAVEFORM_SAVE_CONFIGURATION" value="1" type="GuiResourceData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="4" type="GuiResourceData"/>
+<property name="RTLOptionsPanel_SELECT_TOP_MODULE_OF_YOUR_DESIGN" value="1" type="GuiResourceData"/>
+<property name="SelectTopModuleDialog_SELECT_TOP_MODULE" value="3" type="GuiResourceData"/>
+<property name="SettingsDialog_PROJECT_TREE" value="4" type="GuiResourceData"/>
+<property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="1" type="GuiResourceData"/>
+<property name="SrcChooserPanel_CREATE_FILE" value="1" type="GuiResourceData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="50" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="46" type="TclMode"/>
+=======
+<property name="AddSources" value="2" type="JavaHandler"/>
+>>>>>>> 950b939674ccc338a2f3c6376ca8933bbd91c938
 <property name="RecustomizeCore" value="1" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
 <property name="SimulationRun" value="9" type="JavaHandler"/>
@@ -54,7 +107,12 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Other">
 <property name="GuiMode" value="37" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
+<<<<<<< HEAD
 <property name="TclMode" value="34" type="TclMode"/>
+=======
+<property name="TclMode" value="33" type="TclMode"/>
+>>>>>>> 97950fe12a5b5a2ac97e08c2b0de2f3be3629fd4
+>>>>>>> 950b939674ccc338a2f3c6376ca8933bbd91c938
 </item>
 </section>
 </application>
