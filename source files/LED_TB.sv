@@ -58,7 +58,6 @@ switch1 = 1;
 switch0 = 1;
 switch1 = 1;
 
-#1000000000
 #100 $finish;
 end
 endmodule

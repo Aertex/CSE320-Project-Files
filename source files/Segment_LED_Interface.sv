@@ -16,34 +16,40 @@ output logic [6:0]cathode //7 - 0  = a-g
 
 always_comb
 begin
+    case(clock) //every on/off clock cycle
+    1'b0: 
+        begin
+            if(switch0)
+                cathode[6:0] = 7'b001_001_0; //2 //if switch0 = 1, display 2
+            else 
+                cathode[6:0] = 7'b100_111_1; //1 //if switch0 = 0, display 1
+        end
 
-case(clock) //every on/off clock cycle
-1'b0: 
-begin
-if(switch0) cathode[6:0] = 7'b001_001_0; //2 //if switch0 = 1, display 2
-else cathode[6:0] = 7'b100_111_1; //1 //if switch0 = 0, display 1
-end
-
-1'b1: // when clock 1 
-begin
-if(switch1) cathode[6:0] = 7'b001_001_0; //2 //if switch1 = 1, display 2 
-else cathode[6:0] = 7'b100_111_1; //1 //if switch1 = 0, display 1 
-end  
-endcase
+        1'b1: // when clock 1 
+        begin
+            if(switch1) 
+                cathode[6:0] = 7'b001_001_0; //2 //if switch1 = 1, display 2 
+            else
+                cathode[6:0] = 7'b100_111_1; //1 //if switch1 = 0, display 1 
+        end
+          
+    endcase
  
- //cycle display 1 
- case(clock)
- 1'b0: a0=0;
- 1'b1: a0=1;
- endcase
+     //cycle display 1 
+    case(clock)
+        1'b0: 
+            a0=0;
+        1'b1: 
+            a0=1;
+    endcase
 
- //cycle display 2
-case(clock)
-1'b0: a1=1;
-1'b1: a1=0;
-endcase
-
-
+    //cycle display 2
+    case(clock)
+    1'b0: 
+        a1=1;
+    1'b1: 
+        a1=0;
+    endcase
 end
 
 

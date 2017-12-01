@@ -1,6 +1,6 @@
 # compile verilog/system verilog design source files
-sv xil_defaultlib  "../../../../source files/synchronizer.sv"
-sv xil_defaultlib  "../../../../source files/synchtb.sv"
+sv xil_defaultlib  "../../../../source files/Segment_LED_Interface.sv"
+sv xil_defaultlib  "../../../../source files/LED_TB.sv"
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
