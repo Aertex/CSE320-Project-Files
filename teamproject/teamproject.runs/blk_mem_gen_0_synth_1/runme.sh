@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/blk_mem_gen_0_synth_1'
+HD_PWD='C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/blk_mem_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
