@@ -13,20 +13,21 @@ output logic [15:0]address
 
 );
 
-always_ff@(posedge clock)
+always_ff@(posedge clock, negedge reset)
 begin 
-if(reset || ~enable)
+if(reset || address == 16'd62499)
     address <= 16'd0;
-if(address == 16'd62499)
-    address <= 16'b0;
-if(done&&enable) 
+
+else if(done&&enable) 
     address <= address +1'b1;
   
 end
 
-always_ff@(posedge regclock)
-begin
-    if(reset)
-        address <= 16'd0;
-end
+//always_ff@(posedge regclock)
+//begin
+//    if(reset)
+//        address <= 16'd0;
+//    else 
+//        address<=address;
+//end
 endmodule

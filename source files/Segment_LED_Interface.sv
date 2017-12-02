@@ -28,29 +28,55 @@ else cathode[6:0] = cathode[6:0];
 end
 
 
-always_ff@(posedge clock) //alernating
+
+
+always_ff@(posedge clock)
 begin
-    if(reset)//set values
+if(reset || count == 4'd8) 
+    count <= 4'd0;
+else
+    count<= count + 1'b1;
+end
+
+
+always_ff@(posedge clock) 
+begin
+    if(reset)
     begin
-        count <= 4'd0;
-        a0 <= 1;
-        a1 <= 0;
-        cathode <= 7'd0; 
+    a0<=0;
+    a1<=1;
     end
-    
-    else
+    else if( count == 4'd8) 
     begin
-        if(count == 4'd8)
-        begin
-            //swap lights reset counter
-            count <= 4'd0;
-            a0 <= ~a0;
-            a1 <= ~a1;
-        end
-        else
-            count <= count + 4'd1;
+    a0 <= ~a0;
+    a1 <= ~a1;
     end
 end
+
+
+//always_ff@(posedge clock) //alernating
+//begin
+//    if(reset)//set values
+//    begin
+//        count <= 4'd0;
+//        a0 <= 1;
+//        a1 <= 0;
+//        cathode <= 7'd0; 
+//    end
+    
+//    else
+//    begin
+//        if(count == 4'd8)
+//        begin
+//            //swap lights reset counter
+//            count <= 4'd0;
+//            a0 <= ~a0;
+//            a1 <= ~a1;
+//        end
+//        else
+//            count <= count + 4'd1;
+//    end
+//end
 
 
 endmodule

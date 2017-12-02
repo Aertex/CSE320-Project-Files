@@ -17,24 +17,24 @@ output logic a1,
 output logic [6:0]cathode,
 output logic audio_enable,
 output logic pdm_clk_o,
-output logic channelselect
+output logic channelselect,
 
 
 ////debugging
-//output logic [15:0]memoryin,
-//output logic [15:0]data,
-//output logic [15:0]memaddr,
-//output logic block1ena,
-//output logic block1wea,
-//output logic block2ena,
-//output logic block2wea,
+output logic [15:0]memoryin,
+output logic [15:0]data,
+output logic [15:0]memaddr,
+output logic block1ena,
+output logic block1wea,
+output logic block2ena,
+output logic block2wea,
 
-//output logic timerdone,
-//output logic timer,
-//output logic donedes,
-//output logic doneser,
-//output logic done,
-//output logic scaledclk
+output logic timerdone,
+output logic timer,
+output logic donedes,
+output logic doneser,
+output logic done,
+output logic scaledclk
 );
 
 //wires and such
@@ -62,12 +62,12 @@ logic block2wea; //enables writing to block 2
 logic deseriena; //enables deserializer
 logic seriena; //enables serializer
 logic aen; //wire or gate for address creator enable. takes either block1ena or block2ena as inputs, so whenever we need to do anything to either memory, address creator is enabled
-
+logic creset;
 //debugging
-//always_comb
-//begin
-//    memoryin = memin;
-//end
+always_comb
+begin
+    memoryin = memin;
+end
 
 //or for done signal to address
 always_comb
@@ -94,6 +94,7 @@ Controller controller( //verified working
 .memoryselect_clip_1(memoryselect_clip_1), //2nd bit = which block, 1st bit = read or write, write = 1, read = 0
 .timer(timer), //output to run 2 second timer while on
 .deseriena(deseriena),
+.creset(creset),
 .seriena(seriena)
 );
     
@@ -110,12 +111,14 @@ Segment_LED_Interface LEDS( //led interface,
 timer time2( //outputs 1 when 2 seconds have passed, verified working
 .enable(timer), 
 .clock(clock),
+.reset(creset),
 .done_signal(timerdone) //output of timer when 2 seconds have passed, passed to controller to cut off enable
 );
 
 scaledclock sclk( //converts 100 mhz clock to 1 mhz, feeds serializer, deserializer, and mic in , verified working
 .clock(clock), //100 mhz clock
 .enable(timer), //while timing
+.reset(creset),
 .scaledclk(scaledclk) //1 mhz clock output
 );
 
@@ -138,7 +141,7 @@ Serializer serial( //verified working
 .audio_data(audio_out) //bit stream out 
 );    
 
-Address_creator DS( //address creator feeds both address ins of both memories, verified working
+Address_creator addresscreator( //address creator feeds both address ins of both memories, verified working
 .clock(scaledclk), //scaled clock input to prevent multiple increases when increasing address
 .done(done), //input, address only increases if this is recieved
 .reset(reset),

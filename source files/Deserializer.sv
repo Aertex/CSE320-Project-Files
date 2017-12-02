@@ -35,15 +35,8 @@ output logic pdm_irsel_o //channel select
      
      
      
-         if(counter == 5'd15)
-         begin
-         data <= tempdata;
-         done <= 1'b1;
-         
-         counter <=5'd0;
-         
-         end
-         else done <= 1'b0;
+
+ 
         end
 
      end
@@ -54,10 +47,17 @@ output logic pdm_irsel_o //channel select
     always_ff@(posedge clock)
     begin
     
-    if(~enable) counter<=5'd0;
-    
-    else counter <= counter +1;
-
+    if(~enable|| counter == 5'd15) 
+    begin
+        data <= tempdata;
+        done <= 1'b1;
+        counter<=5'd0;
+    end
+    else
+        begin 
+        counter <= counter +1;
+        done<=1'b0;
+        end
     end
 
 

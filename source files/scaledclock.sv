@@ -22,6 +22,7 @@
 
 module scaledclock(
 input logic clock,
+input logic reset,
 input logic enable,
 output logic scaledclk 
 );
@@ -30,24 +31,19 @@ logic [6:0]counter = 7'd0;
 
 always_ff@(posedge clock)
 begin 
-if((counter == 7'd49))
+if((counter == 7'd49)|| reset)
     counter <= 7'd0;
-if(enable == 0)
-    scaledclk = 0;
-
-else
-    begin
+else if(enable == 1)
            counter <= counter + 1'b1;
-    end
 end
 
 always_ff@(posedge clock)
-    if(counter == 7'd49)
+    if(reset)
         begin
         //toggle clock and reset counter
-            scaledclk <= ~scaledclk;
-            counter <= 7'b0;
+          scaledclk <= 1'b0;
         end
-
+    else if(counter == 7'd49)
+        scaledclk <=!scaledclk;
     
 endmodule

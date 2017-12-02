@@ -12,6 +12,7 @@ output logic [1:0]memoryselect_clip_1, //2nd bit = which block, 0 = block 1, 1 =
 
 output logic timer,
 output logic seriena,
+output logic creset,
 output logic deseriena
 );
 parameter s0 = 5'b00001; //idle state
@@ -86,6 +87,7 @@ begin
     memoryselect_clip_1[1:0] = 2'b00;
     seriena=1'b0;
     deseriena=1'b0;
+    creset = 1'b1;
 end
 
 s1:
@@ -94,6 +96,7 @@ begin
     memoryselect_clip_1[1:0] = 2'b01;
     seriena=1'b0;
     deseriena=1'b1;
+    creset = 1'b0;
 end
 s2:
 begin
@@ -101,6 +104,7 @@ begin
     memoryselect_clip_1[1:0] = 2'b11;
     seriena=1'b0;
     deseriena=1'b1;
+    creset = 1'b0;
 end
 s3: 
 begin
@@ -108,6 +112,7 @@ begin
     memoryselect_clip_1[1:0] = 2'b00;
     seriena=1'b1;
     deseriena=1'b0;
+    creset = 1'b0;
 end
 s4: 
 begin
@@ -115,6 +120,7 @@ begin
     memoryselect_clip_1[1:0] = 2'b10;
     seriena = 1'b1;
     deseriena=1'b0;
+    creset = 1'b0;
 end
 default:
 begin
@@ -122,6 +128,7 @@ begin
     memoryselect_clip_1[1:0] = 2'b00;
     seriena=1'b0;
     deseriena=1'b0;
+    creset = 1'b1;
 end
 endcase
 end

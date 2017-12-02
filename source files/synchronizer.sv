@@ -38,7 +38,7 @@ logic [4:0] b;
 always_ff@(posedge clock)
 begin
 if(reset)
-    b  <= 5'b0;
+    b  <= 5'b10000;
 else 
     b <= {reset,record,play,clipselectionwr,clipselectionr};
 end
