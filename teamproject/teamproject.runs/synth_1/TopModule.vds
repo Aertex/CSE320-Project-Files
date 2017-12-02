@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sat Dec  2 11:38:57 2017
-# Process ID: 13260
+# Start of session at: Sat Dec  2 11:54:42 2017
+# Process ID: 14388
 # Current directory: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1
 # Command line: vivado.exe -log TopModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopModule.tcl
 # Log file: D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/TopModule.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15600 
+INFO: Helper process launched with PID 8944 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 362.430 ; gain = 76.063
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 362.254 ; gain = 75.750
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'TopModule' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:4]
 INFO: [Synth 8-638] synthesizing module 'synchronizer' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:23]
@@ -28,13 +28,12 @@ INFO: [Synth 8-638] synthesizing module 'Controller' [D:/XLINIX Projects/GP/bett
 	Parameter s2 bound to: 5'b00100 
 	Parameter s3 bound to: 5'b01000 
 	Parameter s4 bound to: 5'b10000 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:35]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:63]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:65]
 WARNING: [Synth 8-87] always_comb on 'nextstate_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:39]
-WARNING: [Synth 8-87] always_comb on 'timer_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:66]
-WARNING: [Synth 8-87] always_comb on 'memoryselect_clip_1_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:67]
-WARNING: [Synth 8-87] always_comb on 'seriena_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:68]
-WARNING: [Synth 8-87] always_comb on 'deseriena_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:69]
+WARNING: [Synth 8-87] always_comb on 'timer_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:68]
+WARNING: [Synth 8-87] always_comb on 'memoryselect_clip_1_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:69]
+WARNING: [Synth 8-87] always_comb on 'seriena_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:70]
+WARNING: [Synth 8-87] always_comb on 'deseriena_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:71]
 INFO: [Synth 8-256] done synthesizing module 'Controller' (2#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:5]
 INFO: [Synth 8-638] synthesizing module 'Segment_LED_Interface' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:5]
 WARNING: [Synth 8-87] always_comb on 'cathode_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:22]
@@ -52,13 +51,13 @@ INFO: [Synth 8-256] done synthesizing module 'Address_creator' (8#1) [D:/XLINIX 
 INFO: [Synth 8-638] synthesizing module 'MemInterpreter' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:4]
 WARNING: [Synth 8-87] always_comb on 'block2ena_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:25]
 INFO: [Synth 8-256] done synthesizing module 'MemInterpreter' (9#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:4]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-13260-DESKTOP-MSCBAO0/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (10#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-13260-DESKTOP-MSCBAO0/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-14388-DESKTOP-MSCBAO0/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (10#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-14388-DESKTOP-MSCBAO0/realtime/blk_mem_gen_0_stub.v:6]
 INFO: [Synth 8-638] synthesizing module 'twoinputmux' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv:23]
 INFO: [Synth 8-256] done synthesizing module 'twoinputmux' (11#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv:23]
 INFO: [Synth 8-256] done synthesizing module 'TopModule' (12#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 402.758 ; gain = 116.391
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 403.586 ; gain = 117.082
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -68,17 +67,17 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 402.758 ; gain = 116.391
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 403.586 ; gain = 117.082
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-13260-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
-Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-13260-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
-Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-13260-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
-Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-13260-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
+Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-14388-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
+Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-14388-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
+Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-14388-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
+Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-14388-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
 Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/constraints.xdc]
 Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/constraints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopModule_propImpl.xdc].
@@ -90,16 +89,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 713.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 713.676 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -107,7 +106,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for MEM1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for MEME2. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'Controller'
 INFO: [Synth 8-5546] ROM "timer" won't be mapped to RAM because it is too sparse
@@ -117,15 +116,15 @@ WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/
 INFO: [Synth 8-5546] ROM "scaledclk" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'memoryselect_clip_1_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:67]
-WARNING: [Synth 8-327] inferring latch for variable 'timer_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:66]
-WARNING: [Synth 8-327] inferring latch for variable 'seriena_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:68]
-WARNING: [Synth 8-327] inferring latch for variable 'deseriena_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:69]
+WARNING: [Synth 8-327] inferring latch for variable 'memoryselect_clip_1_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:69]
+WARNING: [Synth 8-327] inferring latch for variable 'timer_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:68]
+WARNING: [Synth 8-327] inferring latch for variable 'seriena_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:70]
+WARNING: [Synth 8-327] inferring latch for variable 'deseriena_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:71]
 WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:39]
 WARNING: [Synth 8-327] inferring latch for variable 'cathode_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:22]
 WARNING: [Synth 8-327] inferring latch for variable 'block2ena_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:25]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -397,7 +396,7 @@ WARNING: [Synth 8-3332] Sequential element (synchronizer/b_reg[4]) is unused and
 WARNING: [Synth 8-3332] Sequential element (Dserial/pdm_irsel_o_reg) is unused and will be removed from module TopModule.
 INFO: [Synth 8-3886] merging instance 'controller/deseriena_reg' (LD) to 'controller/memoryselect_clip_1_reg[0]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -409,13 +408,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -464,7 +463,7 @@ WARNING: [Synth 8-3332] Sequential element (Dserial/data_reg[7]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (Dserial/data_reg[6]) is unused and will be removed from module TopModule.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -488,7 +487,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-3352] multi-driven net timerdone with 1st driver pin 'time2/done_signal_reg/Q' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv:30]
 CRITICAL WARNING: [Synth 8-3352] multi-driven net timerdone with 2nd driver pin 'time2/done_signal_reg__0/Q' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv:22]
@@ -503,7 +502,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -515,25 +514,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -557,9 +556,9 @@ Report Cell Usage:
 |5     |LUT1             |    30|
 |6     |LUT2             |     7|
 |7     |LUT3             |     4|
-|8     |LUT4             |     8|
+|8     |LUT4             |    10|
 |9     |LUT5             |     7|
-|10    |LUT6             |     4|
+|10    |LUT6             |     2|
 |11    |FDRE             |    47|
 |12    |FDSE             |     3|
 |13    |LD               |    10|
@@ -574,16 +573,16 @@ Report Instance Areas:
 |1     |top              |                      |   179|
 |2     |  MemInterpreter |MemInterpreter        |     1|
 |3     |  LEDS           |Segment_LED_Interface |    12|
-|4     |  controller     |Controller            |    29|
-|5     |  synchronizer   |synchronizer          |    10|
+|4     |  controller     |Controller            |    25|
+|5     |  synchronizer   |synchronizer          |    14|
 |6     |  time2          |timer                 |    75|
 +------+-----------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 74 critical warnings and 139 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 713.840 ; gain = 116.391
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.840 ; gain = 427.473
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 713.676 ; gain = 117.082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 713.676 ; gain = 427.172
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -593,9 +592,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   LD => LDCE: 10 instances
 
-50 Infos, 117 Warnings, 74 Critical Warnings and 0 Errors encountered.
+49 Infos, 117 Warnings, 74 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 713.840 ; gain = 434.211
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 713.676 ; gain = 434.426
 INFO: [Common 17-1381] The checkpoint 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/TopModule.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 713.840 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec  2 11:39:32 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 713.676 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  2 11:55:17 2017...

@@ -55,6 +55,8 @@ s3: if(seconds2)
     nextstate = s0;
 s4: if(seconds2) 
     nextstate = s0;
+default:
+    nextstate = s0;
 endcase
 end
 
@@ -63,39 +65,39 @@ begin
 case(state)
 s0:
 begin
-timer = 0;
-memoryselect_clip_1[1:0] = 2'b00;
-seriena=0;
-deseriena=0;
-
+    timer = 1'b0;
+    memoryselect_clip_1[1:0] = 2'b00;
+    seriena=1'b0;
+    deseriena=1'b0;
 end
+
 s1:
 begin
-timer = 1;
-memoryselect_clip_1[1:0] = 2'b01;
-seriena=0;
-deseriena=1;
+    timer = 1'b1;
+    memoryselect_clip_1[1:0] = 2'b01;
+    seriena=1'b0;
+    deseriena=1'b1;
 end
 s2:
 begin
-timer = 1;
-memoryselect_clip_1[1:0] = 2'b11;
-seriena=0;
-deseriena=1;
+    timer = 1'b1;
+    memoryselect_clip_1[1:0] = 2'b11;
+    seriena=1'b0;
+    deseriena=1'b1;
 end
 s3: 
 begin
-timer = 1;
-memoryselect_clip_1[1:0] = 2'b00;
-seriena=1;
-deseriena=0;
+    timer = 1'b1;
+    memoryselect_clip_1[1:0] = 2'b00;
+    seriena=1'b1;
+    deseriena=1'b0;
 end
 s4: 
 begin
-timer = 1;
-memoryselect_clip_1[1:0] = 2'b10;
-seriena = 1;
-deseriena=0;
+    timer = 1'b1;
+    memoryselect_clip_1[1:0] = 2'b10;
+    seriena = 1'b1;
+    deseriena=1'b0;
 end
 endcase
 end
