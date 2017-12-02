@@ -7,6 +7,7 @@ module Deserializer(
 input logic clock,
 input logic enable,
 input logic data_in,
+
 output logic done,
 output logic [15:0] data,
 output logic pdm_clk_o, //microphone clock, needs to be 1 mhz, just feed it thru lol
@@ -25,26 +26,26 @@ output logic pdm_irsel_o //channel select
    
      always_ff@(posedge clock)
      begin
-     pdm_irsel_o = 1'b0; //forced channel 0
+     pdm_irsel_o <= 1'b0; //forced channel 0
      
      if(enable)
         begin
-         tempdata = tempdata<<1;
-         tempdata[0]=data_in;
+         tempdata <= tempdata<<1'b1;
+         tempdata[0]<=data_in;
      
      
      
          if(counter == 5'd15)
          begin
-         data = tempdata;
-         done = 1'b1;
+         data <= tempdata;
+         done <= 1'b1;
          
          counter <=5'd0;
          
          end
-         else done = 1'b0;
+         else done <= 1'b0;
         end
-     
+
      end
      
     

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/jarodr30/Desktop/CSE320-Project-Files-master/teamproject/teamproject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0b483cfcd0214875876a350c764f30f8"/>

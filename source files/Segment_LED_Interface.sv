@@ -13,23 +13,22 @@ output logic [6:0]cathode //7 - 0  = a-g
     );
 logic [3:0]count;
 
-
-
-
 always_comb
 begin
 if(a0 && switch0)
     cathode[6:0] = 7'b001_001_0; //2 //if switch0 = 1, display 2
-if(a0 && ~switch0)
+else if(a0 && ~switch0)
     cathode[6:0] = 7'b100_111_1; //1 //if switch0 = 0, display 1
     
-if(a1 && switch1)
+else if(a1 && switch1)
     cathode[6:0] = 7'b001_001_0; //2 //if switch1 = 1, display 2 
-if(a1 && ~switch1)
+else if(a1 && ~switch1)
     cathode[6:0] = 7'b100_111_1; //1 //if switch1 = 0, display 1 
+else cathode[6:0] = cathode[6:0];
 end
 
-always_ff@(posedge clock)
+
+always_ff@(posedge clock) //alernating
 begin
     if(reset)//set values
     begin

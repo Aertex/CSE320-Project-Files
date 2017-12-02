@@ -30,35 +30,52 @@ begin
         state <= nextstate;
 end
 
-always_comb //next state logic
-begin
-case(state)
+always_comb
+
+begin //next state logic
+case(state)//{reset,record,play,clipselectionwrite,clipselectionread}
 s0:
-begin
- if(q[3] ==1  && q[1] == 0)//record to mem 1 
-    nextstate = s1;
-else if(q[3] ==1 && q[1] == 1) ///record mem2
-    nextstate = s2;
+    begin
+    if(q[3] ==1 && q[1] == 0) nextstate = s1; //write block 1 
+    else if(q[3]==1 && q[1] ==1) nextstate = s2; //write block 2
+    else if(q[2] ==1 && q[0] ==0) nextstate = s3; //read block 1
+    else if(q[2] ==1 && q[0] ==1) nextstate = s4; //read block 2
+    else nextstate=state;
+    end
+    
+s1:
+    begin
+    if(seconds2) nextstate = s0;
+    else nextstate = state;
+    end
+    
+s2:
+    begin
+    if(seconds2) nextstate = s0;
+    else nextstate = state;
+    end
+    s3:
+    begin
+    if(seconds2) nextstate = s0;
+    else nextstate = state;
+    end
+s4:
+    begin
+    if(seconds2) nextstate = s0;
+    else nextstate = state;
+    end
 
-else if (q[2] ==1 && q[0] == 0) //play mem1 
-    nextstate = s3;
-else if (q[2] ==1 && q[0] == 1) //play mem2
-    nextstate = s4;
 
-else nextstate = s0;
-end
-s1: if(seconds2) 
-    nextstate = s0;
-s2: if(seconds2) 
-    nextstate = s0;
-s3: if(seconds2) 
-    nextstate = s0;
-s4: if(seconds2) 
-    nextstate = s0;
-default:
-    nextstate = s0;
+default: nextstate = state;
+
 endcase
 end
+
+
+
+
+
+
 
 always_comb //output logic 
 begin
@@ -97,6 +114,13 @@ begin
     timer = 1'b1;
     memoryselect_clip_1[1:0] = 2'b10;
     seriena = 1'b1;
+    deseriena=1'b0;
+end
+default:
+begin
+    timer = 1'b0;
+    memoryselect_clip_1[1:0] = 2'b00;
+    seriena=1'b0;
     deseriena=1'b0;
 end
 endcase
