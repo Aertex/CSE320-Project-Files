@@ -13,7 +13,7 @@ output logic [15:0]address
 
 );
 
-always_ff@(posedge clock, negedge reset)
+always_ff@(posedge clock, posedge reset)
 begin 
 if(reset || address == 16'd62499)
     address <= 16'd0;

@@ -100,7 +100,7 @@ record = 0;
 
 #5
 reset =1;
-#25 
+#30 
 reset = 0;
 switch0 = 0;
 
