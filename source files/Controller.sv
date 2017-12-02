@@ -25,15 +25,13 @@ logic [4:0]state, nextstate;
 always_ff @(posedge clock) //state transisiton
 begin
     if(q[4]) 
-        nextstate <= s0;
+        state <= s0;
     else 
         state <= nextstate;
 end
 
 always_comb //next state logic
 begin
-if(q[4]) nextstate = s0;
-
 case(state)
 s0:
 begin

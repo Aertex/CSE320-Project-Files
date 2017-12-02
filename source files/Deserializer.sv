@@ -23,7 +23,7 @@ output logic pdm_irsel_o //channel select
     
     
    
-     always@(posedge clock)
+     always_ff@(posedge clock)
      begin
      pdm_irsel_o = 1'b0; //forced channel 0
      
@@ -50,7 +50,7 @@ output logic pdm_irsel_o //channel select
     
     
     
-    always@(posedge clock)
+    always_ff@(posedge clock)
     begin
     
     if(~enable) counter<=5'd0;

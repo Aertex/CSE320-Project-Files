@@ -13,7 +13,7 @@ output logic [15:0]address
 
 );
 
-always@(posedge clock)
+always_ff@(posedge clock)
 begin 
 if(reset || ~enable)
     address <= 16'd0;
@@ -24,7 +24,7 @@ if(done&&enable)
   
 end
 
-always@(posedge regclock)
+always_ff@(posedge regclock)
 begin
     if(reset)
         address <= 16'd0;

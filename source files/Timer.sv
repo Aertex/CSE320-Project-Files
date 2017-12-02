@@ -11,7 +11,7 @@ output logic done_signal //output of timer when 2 seconds have passed, passed to
 logic [27:0]counter = 28'd0;
 
 
-always@(posedge clock)
+always_ff@(posedge clock)
 begin 
 if((counter == 28'd199_999_999)||(enable == 1'b0))
     counter <= 28'd000_000_000;
@@ -23,7 +23,7 @@ else
     end
 end
 
-always@(posedge clock)
+always_ff@(posedge clock)
 begin
     if(counter == 28'd199_999_999)
         begin

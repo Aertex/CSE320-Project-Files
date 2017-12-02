@@ -18,8 +18,10 @@ module Serializer( //shifts new bits right to left
     logic [15:0]tempdata;
     logic boolean;
     
-always_comb audio_enable = enable;
-always@(posedge clock)
+always_comb 
+    audio_enable = enable;
+
+always_ff@(posedge clock)
 begin
  if(enable)
     begin

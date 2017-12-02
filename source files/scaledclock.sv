@@ -28,7 +28,7 @@ output logic scaledclk
 
 logic [6:0]counter = 7'd0;
 
-always@(posedge clock)
+always_ff@(posedge clock)
 begin 
 if((counter == 7'd49))
     counter <= 7'd0;
@@ -41,7 +41,7 @@ else
     end
 end
 
-always@(posedge clock)
+always_ff@(posedge clock)
     if(counter == 7'd49)
         begin
         //toggle clock and reset counter
