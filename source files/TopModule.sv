@@ -17,24 +17,24 @@ output logic a1,
 output logic [6:0]cathode,
 output logic audio_enable,
 output logic pdm_clk_o,
-output logic channelselect,
+output logic channelselect
 
 
 ////debugging
-output logic [15:0]memoryin,
-output logic [15:0]data,
-output logic [15:0]memaddr,
-output logic block1ena,
-output logic block1wea,
-output logic block2ena,
-output logic block2wea,
+//output logic [15:0]memoryin,
+//output logic [15:0]data,
+//output logic [15:0]memaddr,
+//output logic block1ena,
+//output logic block1wea,
+//output logic block2ena,
+//output logic block2wea,
 
-output logic timerdone,
-output logic timer,
-output logic donedes,
-output logic doneser,
-output logic done,
-output logic scaledclk
+//output logic timerdone,
+//output logic timer,
+//output logic donedes,
+//output logic doneser,
+//output logic done,
+//output logic scaledclk
 );
 
 //wires and such
@@ -61,10 +61,10 @@ logic seriena;
 logic aen;
 
 //debugging
-always_comb
-begin
-    memoryin = memin;
-end
+//always_comb
+//begin
+//    memoryin = memin;
+//end
 
 //or for done signal to address
 always_comb
