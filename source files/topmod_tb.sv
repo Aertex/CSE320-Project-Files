@@ -33,6 +33,20 @@ logic a0;
 logic a1;
 logic [6:0]cathode;
 
+logic [15:0]memoryin;
+logic [15:0]data;
+logic [15:0]memaddr;
+logic block1ena;
+logic block1wea;
+logic block2ena;
+logic block2wea;
+logic timerdone;
+logic timer;
+logic donedes;
+logic doneser;
+logic done;
+logic scaledclk;
+
 TopModule TopMod(
 .switch0(switch0),
 .switch1(switch1),
@@ -40,6 +54,20 @@ TopModule TopMod(
 .play(play),
 .record(record),
 .clock(clock),
+//debugging
+.memoryin(memoryin),
+.data(data),
+.memaddr(memaddr),
+.block1ena(block1ena),
+.block1wea(block1wea),
+.block2ena(block2ena),
+.block2wea(block2wea),
+.timerdone(timerdone),
+.timer(timer),
+.donedes(donedes),
+.doneser(doneser),
+.done(done),
+.scaledclk(scaledclk),
 
 .microphone(microphone),
 .audio_out(audio_out),
@@ -75,18 +103,27 @@ reset =1;
 #25 
 reset = 0;
 
+
+
+
+
 #25
 record = 1;
 
-#100
+#1000
 record = 0;
 
-#250
+#2000500000
 play = 1;
 
-#50
+#5000
 play  = 0;
 
+#100000000000000
+switch0 = 0;
+
+#100000000000000
+reset = 0;
 #100 $finish;
 end
 

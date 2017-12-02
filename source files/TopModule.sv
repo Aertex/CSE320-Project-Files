@@ -17,9 +17,24 @@ output logic a1,
 output logic [6:0]cathode,
 output logic audio_enable,
 output logic pdm_clk_o,
-output logic channelselect
+output logic channelselect,
 
 
+////debugging
+output logic [15:0]memoryin,
+output logic [15:0]data,
+output logic [15:0]memaddr,
+output logic block1ena,
+output logic block1wea,
+output logic block2ena,
+output logic block2wea,
+
+output logic timerdone,
+output logic timer,
+output logic donedes,
+output logic doneser,
+output logic done,
+output logic scaledclk
 );
 
 //wires and such
@@ -33,7 +48,7 @@ logic timer;
 logic donedes;
 logic doneser;
 logic done;
-
+logic[15:0] memoryin;
 logic [15:0]memaddr;//address
 logic [15:0]mem1out;
 logic [15:0]mem2out;
@@ -41,10 +56,16 @@ logic block1ena;
 logic block1wea;
 logic block2ena;
 logic block2wea;
-
 logic deseriena;
 logic seriena;
 logic aen;
+
+//debugging
+always_comb
+begin
+    memoryin = memin;
+end
+
 //or for done signal to address
 always_comb
 begin
@@ -68,15 +89,18 @@ Controller controller( //verified working
 .clock(clock),
 .seconds2(timerdone), //input from timer to let controller know 2 seconds have passed
 .memoryselect_clip_1(memoryselect_clip_1), //2nd bit = which block, 1st bit = read or write, write = 1, read = 0
-.timer(timer) //output to run 2 second timer while on
+.timer(timer), //output to run 2 second timer while on
+.deseriena(deseriena),
+.seriena(seriena)
 );
     
-Segment_LED_Interface LEDS( //led interface, super fucked atm
+Segment_LED_Interface LEDS( //led interface, 
 .switch0(switch0), //slect record clip, 1 or 2 J15 package pins
 .switch1(switch1), //select play clip, 1 or 2  L16
 .a0(a0), //rightmost led segment
 .a1(a1), //second to rightmost led 
 .reset(reset),
+.clock(clock),
 .cathode(cathode) //7 - 0  = a-g
 );
 
@@ -116,6 +140,7 @@ Address_creator DS( //address creator feeds both address ins of both memories, v
 .done(done), //input, address only increases if this is recieved
 .reset(reset),
 .address(memaddr), //output 15:0 address
+.regclock(clock),
 .enable(aen)
 );
 
@@ -125,9 +150,7 @@ MemInterpreter MemInterpreter( //interprets the 2 bit memory input into usable e
 .block1ena(block1ena), //read/write enables decoded from instructions
 .block1wea(block1wea),
 .block2ena(block2ena),
-.block2wea(block2wea),
-.deseriena(deseriena),
-.seriena(seriena)
+.block2wea(block2wea)
 
 );
 

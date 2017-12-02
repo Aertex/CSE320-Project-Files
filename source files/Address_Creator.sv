@@ -7,7 +7,10 @@ input logic clock,
 input logic done,
 input logic reset,
 input logic enable,
+input logic regclock,
 output logic [15:0]address
+
+
 );
 
 always@(posedge clock)
@@ -21,4 +24,9 @@ if(done&&enable)
   
 end
 
+always@(posedge regclock)
+begin
+    if(reset)
+        address <= 16'd0;
+end
 endmodule
