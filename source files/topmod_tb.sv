@@ -102,7 +102,7 @@ record = 0;
 reset =1;
 #25 
 reset = 0;
-
+switch0 = 1;
 
 
 
