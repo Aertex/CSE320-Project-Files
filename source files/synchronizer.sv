@@ -48,10 +48,7 @@ begin
     if(reset)
         q <= 5'b10000;
     else
-        if(record || play)
-            q <= b;
-        else
-            q <= q;
+        q<=b;
 end
 
 
