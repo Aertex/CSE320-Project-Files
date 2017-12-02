@@ -14,7 +14,11 @@ input logic microphone,
 output logic audio_out,
 output logic a0,
 output logic a1,
-output logic [6:0]cathode
+output logic [6:0]cathode,
+output logic audio_enable,
+output logic pdm_clk_o,
+output logic channelselect
+
 
 );
 
@@ -29,7 +33,7 @@ logic timer;
 logic donedes;
 logic doneser;
 logic done;
-logic audio_enable;
+
 logic [15:0]memaddr;//address
 logic [15:0]mem1out;
 logic [15:0]mem2out;
@@ -37,8 +41,7 @@ logic block1ena;
 logic block1wea;
 logic block2ena;
 logic block2wea;
-logic channelselect;
-logic pdm_clk_o;
+
 logic deseriena;
 logic seriena;
 logic aen;
