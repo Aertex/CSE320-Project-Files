@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Sat Dec  2 14:50:20 2017
-| Host         : Jesse-Dell running 64-bit major release  (build 9200)
+| Date         : Sat Dec  2 15:42:56 2017
+| Host         : DESKTOP-MSCBAO0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TopModule_utilization_synth.rpt -pb TopModule_utilization_synth.pb
 | Design       : TopModule
 | Device       : 7a100tcsg324-1
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  133 |     0 |     63400 |  0.21 |
-|   LUT as Logic          |  133 |     0 |     63400 |  0.21 |
+| Slice LUTs*             |  125 |     0 |     63400 |  0.20 |
+|   LUT as Logic          |  125 |     0 |     63400 |  0.20 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |  137 |     0 |    126800 |  0.11 |
 |   Register as Flip Flop |  135 |     0 |    126800 |  0.11 |
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   78 |     0 |       210 | 37.14 |
+| Bonded IOB                  |   20 |     0 |       210 |  9.52 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -147,16 +147,16 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |  116 |        Flop & Latch |
-| OBUF     |   71 |                  IO |
 | LUT1     |   41 |                 LUT |
-| LUT5     |   38 |                 LUT |
-| LUT4     |   33 |                 LUT |
-| LUT3     |   24 |                 LUT |
-| LUT6     |   21 |                 LUT |
+| LUT5     |   39 |                 LUT |
+| LUT4     |   31 |                 LUT |
+| LUT6     |   22 |                 LUT |
 | FDCE     |   16 |        Flop & Latch |
+| OBUF     |   13 |                  IO |
 | CARRY4   |   11 |          CarryLogic |
+| LUT3     |    8 |                 LUT |
+| LUT2     |    7 |                 LUT |
 | IBUF     |    7 |                  IO |
-| LUT2     |    6 |                 LUT |
 | FDSE     |    3 |        Flop & Latch |
 | BUFG     |    2 |               Clock |
 | LDPE     |    1 |        Flop & Latch |

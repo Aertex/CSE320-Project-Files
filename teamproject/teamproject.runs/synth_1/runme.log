@@ -14,92 +14,44 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10648 
-WARNING: [Synth 8-2611] redeclaration of ansi port data is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:44]
-WARNING: [Synth 8-976] data has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:44]
-WARNING: [Synth 8-2654] second declaration of data ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:44]
-INFO: [Synth 8-994] data is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:25]
-WARNING: [Synth 8-2611] redeclaration of ansi port scaledclk is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:45]
-WARNING: [Synth 8-976] scaledclk has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:45]
-WARNING: [Synth 8-2654] second declaration of scaledclk ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:45]
-INFO: [Synth 8-994] scaledclk is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:37]
-WARNING: [Synth 8-2611] redeclaration of ansi port timerdone is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:46]
-WARNING: [Synth 8-976] timerdone has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:46]
-WARNING: [Synth 8-2654] second declaration of timerdone ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:46]
-INFO: [Synth 8-994] timerdone is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:32]
-WARNING: [Synth 8-2611] redeclaration of ansi port timer is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:47]
-WARNING: [Synth 8-976] timer has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:47]
-WARNING: [Synth 8-2654] second declaration of timer ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:47]
-INFO: [Synth 8-994] timer is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:33]
-WARNING: [Synth 8-2611] redeclaration of ansi port donedes is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:48]
-WARNING: [Synth 8-976] donedes has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:48]
-WARNING: [Synth 8-2654] second declaration of donedes ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:48]
-INFO: [Synth 8-994] donedes is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:34]
-WARNING: [Synth 8-2611] redeclaration of ansi port doneser is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:49]
-WARNING: [Synth 8-976] doneser has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:49]
-WARNING: [Synth 8-2654] second declaration of doneser ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:49]
-INFO: [Synth 8-994] doneser is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:35]
-WARNING: [Synth 8-2611] redeclaration of ansi port done is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:50]
-WARNING: [Synth 8-976] done has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:50]
-WARNING: [Synth 8-2654] second declaration of done ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:50]
-INFO: [Synth 8-994] done is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:36]
-WARNING: [Synth 8-2611] redeclaration of ansi port memaddr is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:54]
-WARNING: [Synth 8-976] memaddr has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:54]
-WARNING: [Synth 8-2654] second declaration of memaddr ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:54]
-INFO: [Synth 8-994] memaddr is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:26]
-WARNING: [Synth 8-2611] redeclaration of ansi port block1ena is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:58]
-WARNING: [Synth 8-976] block1ena has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:58]
-WARNING: [Synth 8-2654] second declaration of block1ena ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:58]
-INFO: [Synth 8-994] block1ena is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:27]
-WARNING: [Synth 8-2611] redeclaration of ansi port block1wea is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:59]
-WARNING: [Synth 8-976] block1wea has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:59]
-WARNING: [Synth 8-2654] second declaration of block1wea ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:59]
-INFO: [Synth 8-994] block1wea is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:28]
-WARNING: [Synth 8-2611] redeclaration of ansi port block2ena is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:60]
-WARNING: [Synth 8-976] block2ena has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:60]
-WARNING: [Synth 8-2654] second declaration of block2ena ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:60]
-INFO: [Synth 8-994] block2ena is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:29]
-WARNING: [Synth 8-2611] redeclaration of ansi port block2wea is not allowed [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:61]
-WARNING: [Synth 8-976] block2wea has already been declared [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:61]
-WARNING: [Synth 8-2654] second declaration of block2wea ignored [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:61]
-INFO: [Synth 8-994] block2wea is declared here [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:30]
+INFO: Helper process launched with PID 17172 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 367.414 ; gain = 83.133
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 362.559 ; gain = 76.066
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopModule' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:4]
-INFO: [Synth 8-638] synthesizing module 'synchronizer' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/synchronizer.sv:23]
-INFO: [Synth 8-256] done synthesizing module 'synchronizer' (1#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/synchronizer.sv:23]
-INFO: [Synth 8-638] synthesizing module 'Controller' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Controller.sv:5]
+INFO: [Synth 8-638] synthesizing module 'TopModule' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:4]
+INFO: [Synth 8-638] synthesizing module 'synchronizer' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'synchronizer' (1#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/synchronizer.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Controller' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:5]
 	Parameter s0 bound to: 5'b00001 
 	Parameter s1 bound to: 5'b00010 
 	Parameter s2 bound to: 5'b00100 
 	Parameter s3 bound to: 5'b01000 
 	Parameter s4 bound to: 5'b10000 
-INFO: [Synth 8-256] done synthesizing module 'Controller' (2#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Controller.sv:5]
-INFO: [Synth 8-638] synthesizing module 'Segment_LED_Interface' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Segment_LED_Interface.sv:5]
-WARNING: [Synth 8-87] always_comb on 'cathode_reg' did not result in combinational logic [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Segment_LED_Interface.sv:19]
-INFO: [Synth 8-256] done synthesizing module 'Segment_LED_Interface' (3#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Segment_LED_Interface.sv:5]
-INFO: [Synth 8-638] synthesizing module 'timer' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Timer.sv:4]
-INFO: [Synth 8-256] done synthesizing module 'timer' (4#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Timer.sv:4]
-INFO: [Synth 8-638] synthesizing module 'scaledclock' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/scaledclock.sv:23]
-INFO: [Synth 8-256] done synthesizing module 'scaledclock' (5#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/scaledclock.sv:23]
-INFO: [Synth 8-638] synthesizing module 'Deserializer' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Deserializer.sv:6]
-INFO: [Synth 8-256] done synthesizing module 'Deserializer' (6#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Deserializer.sv:6]
-INFO: [Synth 8-638] synthesizing module 'Serializer' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv:6]
-INFO: [Synth 8-256] done synthesizing module 'Serializer' (7#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Serializer.sv:6]
-INFO: [Synth 8-638] synthesizing module 'Address_creator' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Address_Creator.sv:5]
-INFO: [Synth 8-256] done synthesizing module 'Address_creator' (8#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Address_Creator.sv:5]
-INFO: [Synth 8-638] synthesizing module 'MemInterpreter' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/MemInterpreter.sv:4]
-INFO: [Synth 8-226] default block is never used [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/MemInterpreter.sv:19]
-INFO: [Synth 8-256] done synthesizing module 'MemInterpreter' (9#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/MemInterpreter.sv:4]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-6148-Jesse-Dell/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (10#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-6148-Jesse-Dell/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'twoinputmux' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/twoinputmux.sv:23]
-INFO: [Synth 8-256] done synthesizing module 'twoinputmux' (11#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/twoinputmux.sv:23]
-INFO: [Synth 8-256] done synthesizing module 'TopModule' (12#1) [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/TopModule.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (2#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Controller.sv:5]
+INFO: [Synth 8-638] synthesizing module 'Segment_LED_Interface' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:5]
+WARNING: [Synth 8-87] always_comb on 'cathode_reg' did not result in combinational logic [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'Segment_LED_Interface' (3#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:5]
+INFO: [Synth 8-638] synthesizing module 'timer' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'timer' (4#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv:4]
+INFO: [Synth 8-638] synthesizing module 'scaledclock' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/scaledclock.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'scaledclock' (5#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/scaledclock.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Deserializer' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Deserializer.sv:6]
+INFO: [Synth 8-256] done synthesizing module 'Deserializer' (6#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Deserializer.sv:6]
+INFO: [Synth 8-638] synthesizing module 'Serializer' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Serializer.sv:6]
+INFO: [Synth 8-256] done synthesizing module 'Serializer' (7#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Serializer.sv:6]
+INFO: [Synth 8-638] synthesizing module 'Address_creator' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'Address_creator' (8#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv:5]
+INFO: [Synth 8-638] synthesizing module 'MemInterpreter' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:4]
+INFO: [Synth 8-226] default block is never used [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'MemInterpreter' (9#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/MemInterpreter.sv:4]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-7500-DESKTOP-MSCBAO0/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (10#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-7500-DESKTOP-MSCBAO0/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'twoinputmux' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'twoinputmux' (11#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/twoinputmux.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'TopModule' (12#1) [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/TopModule.sv:4]
 WARNING: [Synth 8-3331] design Address_creator has unconnected port regclock
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 394.215 ; gain = 109.934
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 402.883 ; gain = 116.391
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -109,38 +61,38 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 394.215 ; gain = 109.934
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 402.883 ; gain = 116.391
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-6148-Jesse-Dell/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
-Finished Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-6148-Jesse-Dell/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
-Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-6148-Jesse-Dell/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
-Finished Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-6148-Jesse-Dell/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
-Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/constraints.xdc]
-Finished Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopModule_propImpl.xdc].
+Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-7500-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
+Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-7500-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEM1'
+Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-7500-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
+Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/.Xil/Vivado-7500-DESKTOP-MSCBAO0/dcp3/blk_mem_gen_0_in_context.xdc] for cell 'MEME2'
+Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/constraints.xdc]
+Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopModule_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TopModule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 710.594 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 712.996 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -148,7 +100,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for MEM1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for MEME2. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'Controller'
 INFO: [Synth 8-5546] ROM "memoryselect_clip_1" won't be mapped to RAM because it is too sparse
@@ -158,17 +110,17 @@ INFO: [Synth 8-5546] ROM "creset" won't be mapped to RAM because it is too spars
 INFO: [Synth 8-5546] ROM "deseriena" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "a0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Segment_LED_Interface.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:35]
 INFO: [Synth 8-5545] ROM "done_signal" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Timer.sv:16]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv:16]
 INFO: [Synth 8-5546] ROM "scaledclk" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/scaledclock.sv:34]
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Deserializer.sv:50]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/scaledclock.sv:34]
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Address_Creator.sv:18]
-WARNING: [Synth 8-327] inferring latch for variable 'cathode_reg' [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Segment_LED_Interface.sv:19]
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv:18]
+WARNING: [Synth 8-327] inferring latch for variable 'cathode_reg' [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:19]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -195,14 +147,14 @@ Detailed RTL Component Info :
 	   3 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 3     
 	   3 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
 	   5 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
 	   4 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -264,6 +216,9 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 2     
 	                5 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module Serializer 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -305,11 +260,10 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "time2/done_signal" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "sclk/scaledclk" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element LEDS/count_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Segment_LED_Interface.sv:35]
-WARNING: [Synth 8-6014] Unused sequential element time2/counter_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Timer.sv:16]
-WARNING: [Synth 8-6014] Unused sequential element sclk/counter_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/scaledclock.sv:34]
-WARNING: [Synth 8-6014] Unused sequential element Dserial/counter_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Deserializer.sv:50]
-WARNING: [Synth 8-6014] Unused sequential element addresscreator/address_reg was removed.  [C:/Users/Jesse/Desktop/CSE320-Project-Files/source files/Address_Creator.sv:18]
+WARNING: [Synth 8-6014] Unused sequential element LEDS/count_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Segment_LED_Interface.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element time2/counter_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Timer.sv:16]
+WARNING: [Synth 8-6014] Unused sequential element sclk/counter_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/scaledclock.sv:34]
+WARNING: [Synth 8-6014] Unused sequential element addresscreator/address_reg was removed.  [D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/source files/Address_Creator.sv:18]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Dserial/pdm_irsel_o_reg )
 INFO: [Synth 8-3886] merging instance 'LEDS/cathode_reg[0]' (LDC) to 'LEDS/cathode_reg[2]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\LEDS/cathode_reg[1] )
@@ -320,7 +274,7 @@ WARNING: [Synth 8-3332] Sequential element (LEDS/cathode_reg[5]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (LEDS/cathode_reg[1]) is unused and will be removed from module TopModule.
 WARNING: [Synth 8-3332] Sequential element (Dserial/pdm_irsel_o_reg) is unused and will be removed from module TopModule.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -332,13 +286,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,7 +304,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -374,7 +328,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -387,7 +341,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,25 +353,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -439,40 +393,40 @@ Report Cell Usage:
 |3     |BUFG             |     2|
 |4     |CARRY4           |    11|
 |5     |LUT1             |    41|
-|6     |LUT2             |     6|
-|7     |LUT3             |    24|
-|8     |LUT4             |    33|
-|9     |LUT5             |    38|
-|10    |LUT6             |    21|
+|6     |LUT2             |     7|
+|7     |LUT3             |     8|
+|8     |LUT4             |    31|
+|9     |LUT5             |    39|
+|10    |LUT6             |    22|
 |11    |FDCE             |    16|
 |12    |FDRE             |   116|
 |13    |FDSE             |     3|
 |14    |LDC              |     1|
 |15    |LDP              |     1|
 |16    |IBUF             |     7|
-|17    |OBUF             |    71|
+|17    |OBUF             |    13|
 +------+-----------------+------+
 
 Report Instance Areas: 
 +------+-----------------+----------------------+------+
 |      |Instance         |Module                |Cells |
 +------+-----------------+----------------------+------+
-|1     |top              |                      |   423|
-|2     |  Dserial        |Deserializer          |    45|
+|1     |top              |                      |   350|
+|2     |  Dserial        |Deserializer          |    46|
 |3     |  LEDS           |Segment_LED_Interface |    19|
 |4     |  addresscreator |Address_creator       |    43|
-|5     |  controller     |Controller            |    34|
-|6     |  sclk           |scaledclock           |    19|
+|5     |  controller     |Controller            |    19|
+|6     |  sclk           |scaledclock           |    18|
 |7     |  serial         |Serializer            |    63|
 |8     |  synchronizer   |synchronizer          |    15|
 |9     |  time2          |timer                 |    73|
 +------+-----------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 710.594 ; gain = 109.934
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 710.594 ; gain = 426.313
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 712.996 ; gain = 116.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 712.996 ; gain = 426.504
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -483,9 +437,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 1 instances
   LDP => LDPE: 1 instances
 
-67 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 710.594 ; gain = 430.973
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Jesse/Desktop/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/TopModule.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 710.594 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec  2 14:50:20 2017...
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 712.996 ; gain = 433.168
+INFO: [Common 17-1381] The checkpoint 'D:/XLINIX Projects/GP/better group project/CSE320-Project-Files/teamproject/teamproject.runs/synth_1/TopModule.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 712.996 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  2 15:42:56 2017...

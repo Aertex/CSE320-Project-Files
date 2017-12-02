@@ -31,7 +31,7 @@ logic [6:0]counter = 7'd0;
 
 always_ff@(posedge clock)
 begin 
-if((counter == 7'd49)|| reset)
+if((counter == 7'd99)|| reset)
     counter <= 7'd0;
 else if(enable == 1)
            counter <= counter + 1'b1;
@@ -43,7 +43,7 @@ always_ff@(posedge clock)
         //toggle clock and reset counter
           scaledclk <= 1'b0;
         end
-    else if(counter == 7'd49)
+    else if(counter == 7'd99)
         scaledclk <=!scaledclk;
     
 endmodule
