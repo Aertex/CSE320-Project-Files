@@ -33,19 +33,19 @@ logic a0;
 logic a1;
 logic [6:0]cathode;
 
-logic [15:0]memoryin;
-logic [15:0]data;
-logic [15:0]memaddr;
-logic block1ena;
-logic block1wea;
-logic block2ena;
-logic block2wea;
-logic timerdone;
-logic timer;
-logic donedes;
-logic doneser;
-logic done;
-logic scaledclk;
+//logic [15:0]memoryin;
+//logic [15:0]data;
+//logic [15:0]memaddr;
+//logic block1ena;
+//logic block1wea;
+//logic block2ena;
+//logic block2wea;
+//logic timerdone;
+//logic timer;
+//logic donedes;
+//logic doneser;
+//logic done;
+//logic scaledclk;
 
 TopModule TopMod(
 .switch0(switch0),
@@ -55,19 +55,19 @@ TopModule TopMod(
 .record(record),
 .clock(clock),
 //debugging
-.memoryin(memoryin),
-.data(data),
-.memaddr(memaddr),
-.block1ena(block1ena),
-.block1wea(block1wea),
-.block2ena(block2ena),
-.block2wea(block2wea),
-.timerdone(timerdone),
-.timer(timer),
-.donedes(donedes),
-.doneser(doneser),
-.done(done),
-.scaledclk(scaledclk),
+//.memoryin(memoryin),
+//.data(data),
+//.memaddr(memaddr),
+//.block1ena(block1ena),
+//.block1wea(block1wea),
+//.block2ena(block2ena),
+//.block2wea(block2wea),
+//.timerdone(timerdone),
+//.timer(timer),
+//.donedes(donedes),
+//.doneser(doneser),
+//.done(done),
+//.scaledclk(scaledclk),
 
 .microphone(microphone),
 .audio_out(audio_out),
@@ -102,7 +102,7 @@ record = 0;
 reset =1;
 #25 
 reset = 0;
-switch0 = 1;
+switch0 = 0;
 
 
 

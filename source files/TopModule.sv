@@ -17,54 +17,57 @@ output logic a1,
 output logic [6:0]cathode,
 output logic audio_enable,
 output logic pdm_clk_o,
-output logic channelselect,
+output logic channelselect
 
 
 ////debugging
-output logic [15:0]memoryin,
-output logic [15:0]data,
-output logic [15:0]memaddr,
-output logic block1ena,
-output logic block1wea,
-output logic block2ena,
-output logic block2wea,
+//output logic [15:0]memoryin,
+//output logic [15:0]data,
+//output logic [15:0]memaddr,
+//output logic block1ena,
+//output logic block1wea,
+//output logic block2ena,
+//output logic block2wea,
 
-output logic timerdone,
-output logic timer,
-output logic donedes,
-output logic doneser,
-output logic done,
-output logic scaledclk
+//output logic timerdone,
+//output logic timer,
+//output logic donedes,
+//output logic doneser,
+//output logic done,
+//output logic scaledclk
 );
 
 //wires and such
-logic [4:0]qout;
-logic [1:0]memoryselect_clip_1;
-logic [15:0]memin;
-logic [15:0]data;
-logic scaledclk;
-logic timerdone;
-logic timer;
-logic donedes;
-logic doneser;
-logic done;
-logic[15:0] memoryin;
-logic [15:0]memaddr;//address
-logic [15:0]mem1out;
-logic [15:0]mem2out;
-logic block1ena;
-logic block1wea;
-logic block2ena;
-logic block2wea;
-logic deseriena;
-logic seriena;
-logic aen;
+logic [4:0]qout; //wire between syncronizer and control, used for 5 bit memory selection, read, write enables
+logic [1:0]memoryselect_clip_1; //wire between controller and memory interpreter, used to send instructions to memory block enables for read/write
+logic [15:0]memin; //wire between 2 16 bit mux input to serializer, passes wanted memory to serializer to convert into a bit stream
+logic [15:0]data; //wire between deserializer and memory blocks, used to pass 16 bit words to store into the block memories
+logic scaledclk; //wire between scaled clock to both serializers and address creator, used to convert 100 mhz clock to 1 mhz
+logic timerdone; //wire between timer and controller, used to signal when 2 seconds have passed
+logic timer; //wire between timer and controller, used to signal the timer to start counting, and cound while timer is on 
+logic donedes; //wire that feeds into an or gate to output a done signal when either the deserializer or serializer are done with their workload 
+logic doneser; //^
+logic done;// wire between the serializers and address creator and block memory, used as a clock for memories to store the newly created word/fetch word
+
+//logic[15:0] memoryin;//debugging
+
+logic [15:0]memaddr;//wire between address creators and memory blocks, sends new address to address in ports of memories 
+logic [15:0]mem1out; //data output of mem1, goes to mux 
+logic [15:0]mem2out; //data output of mem2, goes to mux
+
+logic block1ena; //wire between meminterpreter, enables reading of block 1
+logic block1wea; //enables writing to block 1 
+logic block2ena; //enables reading from block 2
+logic block2wea; //enables writing to block 2 
+logic deseriena; //enables deserializer
+logic seriena; //enables serializer
+logic aen; //wire or gate for address creator enable. takes either block1ena or block2ena as inputs, so whenever we need to do anything to either memory, address creator is enabled
 
 //debugging
-always_comb
-begin
-    memoryin = memin;
-end
+//always_comb
+//begin
+//    memoryin = memin;
+//end
 
 //or for done signal to address
 always_comb
